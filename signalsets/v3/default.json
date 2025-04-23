@@ -1,4 +1,10 @@
 { "commands": [
-
+{ "hdr": "700", "dbg": true, "cmd": {"22": "1F2F"}, "freq": 30,
+  "signals": [
+    {"id": "HILUX_FLI",           "path": "Fuel",    "fmt": { "len": 8,  "max": 100,              "mul": 100, "div": 255,              "unit": "percent"    }, "name": "Fuel level",                     "suggestedMetric": "fuelTankLevel"},
+    {"id": "HILUX_ACCEL_PEDAL",   "path": "Control", "fmt": { "len": 8,  "max": 100,                          "div": 1.42, "add": -41, "unit": "percent"    }, "name": "Accelerator Pedal"},
+    {"id": "HILUX_ENG_OIL_PRESS", "path": "Engine",  "fmt": { "len": 16, "max": 1000,             "mul": 10,  "div": 128,              "unit": "kilopascal" }, "name": "Engine Oil Pressure"},
+    {"id": "HILUX_ATF_TEMP",      "path": "Engine",  "fmt": { "len": 8,  "max": 215,  "min": -40,                          "add": -40, "unit": "celsius"    }, "name": "Transmission Fluid Temperature"}
+  ]}
 ]
 }
