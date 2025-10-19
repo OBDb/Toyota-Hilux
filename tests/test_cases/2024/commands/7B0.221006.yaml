@@ -1,17 +1,17 @@
 command_id: 7B0.221006
 test_cases:
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 39
+    HILUX_MASTER_CYL_TEMP: 39.0
   response: 7B8056210067700
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 41
+    HILUX_MASTER_CYL_TEMP: 41.0
   response: 7B8056210067900
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 42
+    HILUX_MASTER_CYL_TEMP: 42.0
   response: 7B8056210067A00
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 43
+    HILUX_MASTER_CYL_TEMP: 43.0
   response: 7B8056210067B00
 - expected_values:
-    TOYOTA_MASTER_CYL_TEMP: 44
+    HILUX_MASTER_CYL_TEMP: 44.0
   response: 7B8056210067C00
