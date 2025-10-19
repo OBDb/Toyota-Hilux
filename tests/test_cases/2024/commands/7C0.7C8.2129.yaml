@@ -1,20 +1,20 @@
 command_id: 7C0.7C8.2129
 test_cases:
 - expected_values:
-    TOYOTA_FLI_VOL: 11.09643
+    HILUX_FLI_VOL: 11.09643
   response: 7C803612954
 - expected_values:
-    TOYOTA_FLI_VOL: 11.22853
+    HILUX_FLI_VOL: 11.22853
   response: 7C803612955
 - expected_values:
-    TOYOTA_FLI_VOL: 11.49273
+    HILUX_FLI_VOL: 11.49273
   response: 7C803612957
 - expected_values:
-    TOYOTA_FLI_VOL: 11.62483
+    HILUX_FLI_VOL: 11.62483
   response: 7C803612958
 - expected_values:
-    TOYOTA_FLI_VOL: 11.75694
+    HILUX_FLI_VOL: 11.75694
   response: 7C803612959
 - expected_values:
-    TOYOTA_FLI_VOL: 12.02114
+    HILUX_FLI_VOL: 12.02114
   response: 7C80361295B
