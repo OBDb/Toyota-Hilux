@@ -1,0 +1,5 @@
+command_id: 750.221004|e=2A,ta=2A,fc=1
+test_cases:
+- expected_values:
+    HILUX_TT_FL_V3: -30
+  response: 7B8046210040A
