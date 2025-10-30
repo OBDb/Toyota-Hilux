@@ -1,0 +1,10 @@
+command_id: 7B0.2121
+test_cases:
+- expected_values:
+    HILUX_VSS: 0
+    HILUX_VSS_V3: 0
+  response: 7B803612100
+- expected_values:
+    HILUX_VSS: 70.2
+    HILUX_VSS_V3: 66.56
+  response: 7B803612134
