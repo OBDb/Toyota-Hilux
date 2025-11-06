@@ -1,9 +1,9 @@
 { "commands": [
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1017"}, "freq": 0.25,
+{ "hdr": "700", "cmd": {"22": "1017"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_INJ_VOL", "path": "Engine", "fmt": { "len": 16, "max": 20.4, "div": 3200, "unit": "liters" }, "name": "Injection volume"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "102A"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "102A"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_A_F_RATIO_LEARNED_IDLE_BANK_1",  "path": "Engine", "fmt": {           "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/f ratio learned idle, bank 1"},
     {"id": "HILUX_A_F_RATIO_LEARNED_LOW_BANK_1",   "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/f ratio learned low, bank 1"},
@@ -11,104 +11,104 @@
     {"id": "HILUX_A_F_RATIO_LEARNED_MID_2_BANK_1", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/f ratio learned mid 2, bank 1"},
     {"id": "HILUX_A_F_RATIO_LEARNED_HIGH_BANK_1",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 50, "min": -50, "mul": 100, "div": 255, "add": -50, "unit": "percent" }, "name": "A/f ratio learned high, bank 1"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1043"}, "freq": 0.25,
+{ "hdr": "700", "cmd": {"22": "1043"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EWP_TARGET_VSS", "path": "Engine", "fmt": {          "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Electric water pump target speed"},
     {"id": "HILUX_EWP_RPM",        "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 6375, "mul": 25, "unit": "rpm" }, "name": "Electric water pump rpm"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "105C"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "105C"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_KNOCK_CORRECT_LEARNED_VALUE", "path": "Engine", "fmt": {           "len": 16, "max": 1023, "min": -1024, "mul": 312.5, "div": 10000, "add": -1024, "unit": "scalar" }, "name": "Knock correction, learned value"},
     {"id": "HILUX_KNOCK_FEEDBACK_VALUE",        "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 1023, "min": -1024, "mul": 312.5, "div": 10000, "add": -1024, "unit": "scalar" }, "name": "Knock feedback value"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "105E"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "105E"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_ECU_INTERNAL_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ecu internal temperature"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1062"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "1062"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EXHAUST_VVT_OCV_CONTROL_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 400, "mul": 400, "div": 65535, "unit": "percent" }, "name": "Exhaust vvt oil control valve control duty"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "106F"}, "freq": 0.25,
+{ "hdr": "700", "cmd": {"22": "106F"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_INTAKE_VVT_TARGET_ANGLE_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Intake vvt target angle b1"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1071"}, "freq": 0.25,
+{ "hdr": "700", "cmd": {"22": "1071"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EXHAUST_VVT_TARGET_ANGLE_B1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Exhaust vvt target angle b1"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1078"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "1078"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_IDLE_SAC_CYL_1", "path": "Engine", "fmt": {           "len": 8, "max": 15.9375, "mul": 6.25, "div": 100, "unit": "degrees" }, "name": "Idle spark advance control, cylinder 1"},
     {"id": "HILUX_IDLE_SAC_CYL_2", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 15.9375, "mul": 6.25, "div": 100, "unit": "degrees" }, "name": "Idle spark advance control, cylinder 2"},
     {"id": "HILUX_IDLE_SAC_CYL_3", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 15.9375, "mul": 6.25, "div": 100, "unit": "degrees" }, "name": "Idle spark advance control, cylinder 3"},
     {"id": "HILUX_IDLE_SAC_CYL_4", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 15.9375, "mul": 6.25, "div": 100, "unit": "degrees" }, "name": "Idle spark advance control, cylinder 4"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "107B"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "107B"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EOT_V2", "path": "Engine", "fmt": {"bix": 192, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1087"}, "freq": 0.25,
+{ "hdr": "700", "cmd": {"22": "1087"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_INTAKE_VVT_CHANGE_ANGLE_BANK_1", "path": "Engine", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Intake vvt change angle bank 1"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "10A5"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "10A5"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_MISFIRE_COUNT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire, all cylinders counter"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "10A7"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "10A7"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_MIS_1", "path": "Engine.Misfires", "fmt": {           "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count, cylinder 1"},
     {"id": "HILUX_MIS_2", "path": "Engine.Misfires", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count, cylinder 2"},
     {"id": "HILUX_MIS_3", "path": "Engine.Misfires", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count, cylinder 3"},
     {"id": "HILUX_MIS_4", "path": "Engine.Misfires", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count, cylinder 4"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "10AA"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "10AA"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_MISFIRE_LOAD",   "path": "Engine", "fmt": {           "len": 8, "max": 510,               "mul": 510,  "div": 255,              "unit": "percent" }, "name": "Misfire load"},
     {"id": "HILUX_MISFIRE_RPM",    "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 6375,              "mul": 6375, "div": 255,              "unit": "rpm"     }, "name": "Misfire rpm"},
     {"id": "HILUX_MISFIRE_MARGIN", "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 127,  "min": -128,                          "add": -128, "unit": "rpm"     }, "name": "Misfire margin"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "10CD"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "10CD"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_LFP",  "path": "Fuel", "fmt": { "len": 16, "max": 100,                "div": 10, "add": -3276.8,               "unit": "kilopascal" }, "name": "Low fuel pressure sensor"},
     {"id": "HILUX_LFPS", "path": "Fuel", "fmt": { "len": 16, "max": 3276, "min": -3276, "div": 10,                 "sign": true, "unit": "kilopascal" }, "name": "Low fuel pressure sensor"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1F3C"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "1F3C"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_CAT_T_BANK_1_SENSOR_1", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 1"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1F3E"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "1F3E"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_CAT_T_BANK_1_SENSOR_2", "path": "Engine", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Catalyst temperature, bank 1 sensor 2"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1F5C"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "1F5C"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EOT_V3", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variation 2"}
   ]},
-{ "hdr": "700", "dbg": true, "cmd": {"22": "2848"}, "freq": 0.5,
+{ "hdr": "700", "cmd": {"22": "2848"}, "freq": 0.5, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EOP_CONTROL_VALVE", "path": "Engine", "fmt": { "len": 16, "max": 4999, "mul": 762.93, "div": 10000, "unit": "milliamps" }, "name": "Engine oil pressure control valve"}
   ]},
-{ "hdr": "700", "rax": "708", "cmd": {"22": "1074"}, "freq": 0.25, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1074"}, "freq": 0.25, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EOP",           "path": "Engine", "fmt": { "len": 16, "max": 5119,            "div": 12.8, "unit": "kilopascal" }, "name": "Engine oil pressure"},
     {"id": "HILUX_ENG_OIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 1000, "mul": 10, "div": 128,  "unit": "kilopascal" }, "name": "Engine oil pressure"}
   ]},
-{ "hdr": "701", "dbg": true, "cmd": {"22": "0103"}, "freq": 10,
+{ "hdr": "701", "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_ODO_V5", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "701", "dbg": true, "cmd": {"22": "1627"}, "freq": 1,
+{ "hdr": "701", "cmd": {"22": "1627"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_TFP_T",   "path": "Transmission", "fmt": { "len": 16, "max": 215, "min": -40,                    "div": 256, "add": -40, "unit": "celsius"    }, "name": "Transmission fluid pan temperature"},
     {"id": "HILUX_TF1_PAN", "path": "Engine",       "fmt": { "len": 16, "max": 350, "min": -40, "mul": 0.00703125,             "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid pan temperature"}
   ]},
-{ "hdr": "701", "dbg": true, "cmd": {"22": "1628"}, "freq": 1,
+{ "hdr": "701", "cmd": {"22": "1628"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_TF2_CONV", "path": "Engine", "fmt": { "len": 16, "max": 350, "min": -40, "mul": 0.00703125, "add": -40, "unit": "fahrenheit" }, "name": "Transmission fluid post-converter temperature"}
   ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1004"}, "freq": 5,
+{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1004"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020], "from": 2023 },
   "signals": [
     {"id": "HILUX_TT_1",        "path": "Tires", "fmt": {           "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Front right tire temperature"},
     {"id": "HILUX_TT_FL_V3",    "path": "Tires", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40,                 "unit": "celsius" }, "name": "Front left tire temperature"},
@@ -118,7 +118,7 @@
     {"id": "HILUX_TT_4",        "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 100, "min": -30, "add": -40, "nullmin": -30, "unit": "celsius" }, "name": "Rear left tire temperature"},
     {"id": "HILUX_TT_SPARE_V3", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 215, "min": -40, "add": -40,                 "unit": "celsius" }, "name": "Spare tire temperature"}
   ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "1005"}, "freq": 5,
+{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "1005"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020], "from": 2023 },
   "signals": [
     {"id": "HILUX_TP_1",        "path": "Tires", "fmt": {"bix": 8,  "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi"  }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "HILUX_TP_2",        "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi"  }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
@@ -126,7 +126,7 @@
     {"id": "HILUX_TP_4",        "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 56.8, "div": 4.125, "add": -5.6969697, "nullmin": 0, "unit": "psi"  }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
     {"id": "HILUX_TP_SPARE_V2", "path": "Tires", "fmt": {"bix": 72, "len": 8, "max": 4,    "div": 58,    "add": -0.5,                     "unit": "bars" }, "name": "Spare tire pressure"}
   ]},
-{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "dbg": true, "cmd": {"22": "2021"}, "freq": 86400,
+{ "hdr": "750", "eax": "2A", "tst": "2A", "fcm1": true, "cmd": {"22": "2021"}, "freq": 86400, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020], "from": 2023 },
   "signals": [
     {"id": "HILUX_TID_1", "path": "Tires", "name": "Tire 1 position", "fmt": {"len": 8, "map": {
           "1": { "description": "Front left",  "value": "FL" },
@@ -157,27 +157,27 @@
         }}
     }
   ]},
-{ "hdr": "7B0", "dbg": true, "cmd": {"21": "21"}, "freq": 0.2,
+{ "hdr": "7B0", "cmd": {"21": "21"}, "freq": 0.2, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_VSS",    "path": "Movement", "fmt": { "len": 8, "max": 323.85, "mul": 1.35, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."},
     {"id": "HILUX_VSS_V3", "path": "Movement", "fmt": { "len": 8, "max": 326,    "mul": 1.28, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
   ]},
-{ "hdr": "7B0", "dbg": true, "cmd": {"21": "47"}, "freq": 0.25,
+{ "hdr": "7B0", "cmd": {"21": "47"}, "freq": 0.25, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
     {"id": "HILUX_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
     {"id": "HILUX_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value (degrees/sec)"},
     {"id": "HILUX_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",         "description": "Positive = counter-clockwise, negative = clockwise."}
   ]},
-{ "hdr": "7B0", "cmd": {"22": "1006"}, "freq": 5, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
+{ "hdr": "7B0", "cmd": {"22": "1006"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 5, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 21, "mul": 500, "div": 3785, "unit": "gallons" }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7D0", "cmd": {"21": "62"}, "freq": 1, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
+{ "hdr": "7D0", "cmd": {"21": "62"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_PARKING_BRAKE", "path": "Control", "name": "Parking brake", "fmt": {"len": 8, "map": {
           "1":   { "description": "", "value": "Off" },
@@ -195,93 +195,93 @@
         }}
     }
   ]},
-{ "hdr": "7D2", "fcm1": true, "dbg": true, "cmd": {"22": "0103"}, "freq": 10,
+{ "hdr": "7D2", "fcm1": true, "cmd": {"22": "0103"}, "freq": 10, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_ODO_V2_V2", "path": "Trips", "fmt": {"bix": 8, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "1040"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "1040"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_TRANSAXLE_OIL_T", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transaxle oil temperature"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "1075"}, "freq": 0.1,
+{ "hdr": "7D2", "cmd": {"22": "1075"}, "freq": 0.1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_FR_WHEEL_VSS", "path": "Movement", "fmt": {           "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
     {"id": "HILUX_FL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "HILUX_RR_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 32, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
     {"id": "HILUX_RL_WHEEL_VSS", "path": "Movement", "fmt": {"bix": 48, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "add": -327.68, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "10A1"}, "freq": 0.25,
+{ "hdr": "7D2", "cmd": {"22": "10A1"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_RPM", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "rpm"          }, "name": "Motor rpm"},
     {"id": "HILUX_TQ",  "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Motor torque"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "10A2"}, "freq": 0.25,
+{ "hdr": "7D2", "cmd": {"22": "10A2"}, "freq": 0.25, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_RM_TQ_REQ", "path": "Engine", "fmt": {           "len": 16, "max": 32767, "min": -32768,           "add": -32768, "unit": "newtonMeters" }, "name": "Rear motor torque, requested"},
     {"id": "HILUX_RM_TQ",     "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 4095,  "min": -4096,  "div": 8, "add": -4096,  "unit": "newtonMeters" }, "name": "Rear motor torque"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "10A6"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "10A6"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_RM_INVRT_COOL_T", "path": "Engine", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Rear motor inverter, coolant temperature"},
     {"id": "HILUX_M_INVRT_MAX_T",   "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Motor inverter, maximum temperature"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "10B2"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "10B2"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_INVRT_COOLANT_T", "path": "Engine", "fmt": { "len": 8, "max": 100, "add": -40, "unit": "celsius" }, "name": "Inverter coolant temperature"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "15EE"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "15EE"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_12V_V", "path": "Battery", "fmt": { "len": 8, "max": 80.2, "mul": 0.31448, "add": 0.0125, "unit": "volts" }, "name": "12v battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "15F7"}, "freq": 0.5,
+{ "hdr": "7D2", "cmd": {"22": "15F7"}, "freq": 0.5, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_12V_C", "path": "Battery", "fmt": { "len": 16, "max": 124, "min": -125, "mul": 38.147, "div": 10000, "add": -125, "unit": "amps" }, "name": "12v battery current"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "15F8"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "15F8"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_12V_T", "path": "Battery", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "12v battery temperature"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "1F05"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "1F05"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_COOL_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature"}
   ]},
-{ "hdr": "7D2", "fcm1": true, "dbg": true, "cmd": {"22": "1F0D"}, "freq": 0.25,
+{ "hdr": "7D2", "fcm1": true, "cmd": {"22": "1F0D"}, "freq": 0.25, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_VSS_V2", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "1F46"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "1F46"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_AAT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "1F49"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "1F49"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_ACC_PEDAL_POS_1", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal, position 1"}
   ]},
-{ "hdr": "7D2", "dbg": true, "cmd": {"22": "1F4A"}, "freq": 1,
+{ "hdr": "7D2", "cmd": {"22": "1F4A"}, "freq": 1, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_ACC_PEDAL_POS_2", "path": "Control", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Accelerator pedal, position 2"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"21": "28"}, "freq": 5,
+{ "hdr": "7E0", "cmd": {"21": "28"}, "freq": 5, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"21": "51"}, "freq": 1,
+{ "hdr": "7E0", "cmd": {"21": "51"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_PREV_TRIP_DST", "path": "Trips",  "fmt": {"bix": 40, "len": 16, "max": 655.35,             "div": 100,             "unit": "kilometers" }, "name": "Previous trip distance"},
     {"id": "HILUX_VVTOT",         "path": "Engine", "fmt": {"bix": 56, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Variable valve timing oil temperature"},
     {"id": "HILUX_EOT",           "path": "Engine", "fmt": {"bix": 72, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"21": "82"}, "freq": 1,
+{ "hdr": "7E0", "cmd": {"21": "82"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_ATF_PAN_T", "path": "Transmission", "fmt": {           "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission temperature (pan)"},
     {"id": "HILUX_ATF_TQC_T", "path": "Transmission", "fmt": {"bix": 16, "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission temperature (torque converter)"}
   ]},
-{ "hdr": "7E0", "dbg": true, "cmd": {"21": "85"}, "freq": 0.4,
+{ "hdr": "7E0", "cmd": {"21": "85"}, "freq": 0.4, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_GEAR",       "path": "Transmission", "fmt": {          "len": 8, "max": 20, "unit": "scalar" }, "name": "Gear"},
     {"id": "HILUX_TQC_LOCKUP", "path": "Transmission", "fmt": {"bix": 8, "len": 1, "max": 1,  "unit": "offon"  }, "name": "Torque converter lock-up", "description": "Engages a clutch inside the torque converter to create a direct connection between the engine and transmission, reducing slippage and improving efficiency."}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "from": 2014 },
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "to": 2012, "years": [2014, 2015, 2016, 2017, 2019, 2020, 2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_CC_S", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
   ]}
