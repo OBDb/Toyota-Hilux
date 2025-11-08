@@ -1,0 +1,8 @@
+command_id: 7C0.7C8.2129
+test_cases:
+- expected_values:
+    HILUX_FLI_VOL: 0.7926
+  response: 7C803612906
+- expected_values:
+    HILUX_FLI_VOL: 3.96301
+  response: 7C80361291E
