@@ -1,0 +1,38 @@
+command_id: 7E0.2185
+test_cases:
+- expected_values:
+    HILUX_GEAR: 1
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185010010'
+- expected_values:
+    HILUX_GEAR: 2
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185020010'
+- expected_values:
+    HILUX_GEAR: 2
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185022010'
+- expected_values:
+    HILUX_GEAR: 3
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185032010'
+- expected_values:
+    HILUX_GEAR: 4
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185042010'
+- expected_values:
+    HILUX_GEAR: 4
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185042018'
+- expected_values:
+    HILUX_GEAR: 4
+    HILUX_TQC_LOCKUP: 1
+  response: 7E805618504A018
+- expected_values:
+    HILUX_GEAR: 5
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185052010'
+- expected_values:
+    HILUX_GEAR: 5
+    HILUX_TQC_LOCKUP: 0
+  response: '7E8056185052018'
