@@ -1,36 +1,29 @@
 command_id: 700.708.221074
 test_cases:
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 105.39062
-    HILUX_EOP: 105.39062
+    HILUX_EOP: 1349
   response: |-
     2210741
     708056210740545
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 113.90625
-    HILUX_EOP: 113.90625
+    HILUX_EOP: 1458
   response: |-
     2210741
     7080562107405B2
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 115.70312
-    HILUX_EOP: 115.70312
+    HILUX_EOP: 1481
   response: |-
     2210741
     7080562107405C9
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 11.64062
-    HILUX_EOP: 11.64062
+    HILUX_EOP: 149
   response: '708056210740095'
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 120.0
-    HILUX_EOP: 120.0
+    HILUX_EOP: 1536
   response: '708056210740600'
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 319.92188
-    HILUX_EOP: 319.92188
+    HILUX_EOP: 4095
   response: 708056210740FFF
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 540.23438
-    HILUX_EOP: 540.23438
+    HILUX_EOP: 6915
   response: 708056210741B03
