@@ -2,4 +2,4 @@ command_id: 7E0.7E8.2121
 test_cases:
 - expected_values:
     HILUX_CC_S: 0
-  response: 7E80461210000
+  response: '7E80461210000'
