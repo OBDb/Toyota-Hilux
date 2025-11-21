@@ -1,0 +1,17 @@
+command_id: 7D0.7D8.2162
+test_cases:
+- expected_values:
+    HILUX_PARKING_BRAKE_2: 1
+  response: 7D8056162190000
+- expected_values:
+    HILUX_PARKING_BRAKE_2: 1
+  response: 7D8056162190D00
+- expected_values:
+    HILUX_PARKING_BRAKE_2: 1
+  response: 7D8056162194600
+- expected_values:
+    HILUX_PARKING_BRAKE_2: 1
+  response: 7D80561621B0000
+- expected_values:
+    HILUX_PARKING_BRAKE_2: 1
+  response: 7D80561621D0300
