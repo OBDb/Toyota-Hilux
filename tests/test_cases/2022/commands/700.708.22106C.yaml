@@ -1,0 +1,5 @@
+command_id: 700.708.22106C
+test_cases:
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 1872
+  response: 7080562106C0750
