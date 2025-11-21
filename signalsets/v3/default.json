@@ -4,10 +4,6 @@
     {"id": "HILUX_ECT_IGN",  "path": "Engine", "fmt": {          "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, ignition on"},
     {"id": "HILUX_ECT_INIT", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, initial"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "0103"}, "freq": 1,
-  "signals": [
-    {"id": "HILUX_ODO_700", "path": "Trips", "fmt": { "len": 32, "max": 4294967295, "unit": "kilometers" }, "name": "Odometer, variation"}
-  ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1002"}, "freq": 1,
   "signals": [
     {"id": "HILUX_12V_V", "path": "Battery", "fmt": { "len": 16, "max": 15, "mul": 12.207, "div": 10000, "unit": "volts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
@@ -16,24 +12,171 @@
   "signals": [
     {"id": "HILUX_INJECTOR_PORT", "path": "Engine", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "milliseconds" }, "name": "Injector port"}
   ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1046"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_COOLING_FAN_DUTY_RATIO", "path": "Engine", "fmt": { "len": 8, "max": 100, "mul": 127.5, "div": 255, "unit": "percent" }, "name": "Cooling fan duty ratio"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "106A"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_FP_DUTY_RATIO", "path": "Fuel", "fmt": { "len": 16, "max": 3996.0365853659, "mul": 0.0609756098, "unit": "kilopascal" }, "name": "Fuel pump duty ratio"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "106C"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_12V_DISCONNECT_ODO", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since last battery cable disconnection"}
+  ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1074"}, "freq": 0.25, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
   "signals": [
     {"id": "HILUX_EOP", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Engine oil pressure"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1075"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_IWP_SPEED", "path": "Movement", "fmt": { "len": 16, "max": 300, "min": -40, "mul": 238212, "div": 10000, "add": -256000, "unit": "celsius" }, "name": "Intercooler water pump speed"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1084"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_ROUGH_IDLE_4", "path": "Engine", "fmt": {"bix": 28, "len": 1, "max": 1, "unit": "offon" }, "name": "Rough idle cyl.4"},
+    {"id": "HILUX_ROUGH_IDLE_3", "path": "Engine", "fmt": {"bix": 29, "len": 1, "max": 1, "unit": "offon" }, "name": "Rough idle cyl.3"},
+    {"id": "HILUX_ROUGH_IDLE_2", "path": "Engine", "fmt": {"bix": 30, "len": 1, "max": 1, "unit": "offon" }, "name": "Rough idle cyl.2"},
+    {"id": "HILUX_ROUGH_IDLE_1", "path": "Engine", "fmt": {"bix": 31, "len": 1, "max": 1, "unit": "offon" }, "name": "Rough idle cyl.1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1088"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_EXHAUST_VVT_CHANGE_ANGLE_1", "path": "ECU", "fmt": { "len": 16, "max": 639.9, "mul": 639.9, "div": 65535, "unit": "degrees" }, "name": "Exhaust VVT change angle bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1089"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_EXHAUST_VVT_HOLD_LEARN_VALUE_1", "path": "ECU", "fmt": { "len": 16, "max": 100, "mul": 399.9, "div": 65535, "unit": "percent" }, "name": "Exhaust VVT hold learn value bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "108A"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_VVT_IE_DUTY_RATIO_1",              "path": "ECU", "fmt": {           "len": 15, "max": 100, "mul": 399.9, "div": 65535, "add": -200, "unit": "percent" }, "name": "VVT-ie duty ratio bank 1"},
+    {"id": "HILUX_VVT_IE_MOTOR_DIRECTION_FORWARD_1", "path": "ECU", "fmt": {"bix": 15, "len": 1,  "max": 1,                                            "unit": "offon"   }, "name": "VVT-ie motor direction: forward bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "108D"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_INTAKE_VVT_MOST_OVER_RETARDED_LEARN_VALUE_1", "path": "ECU", "fmt": { "len": 16, "max": 639.99, "mul": 639.99, "div": 65535, "unit": "degrees" }, "name": "Intake VVT most over-retarded learn value bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "108F"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_EXHAUST_VVT_TIMING_MOST_OVER_ADVANCED_LEARN_VALUE_1", "path": "ECU", "fmt": { "len": 16, "max": 639.99, "mul": 639.99, "div": 65535, "unit": "degrees" }, "name": "Exhaust VVT timing most over-advanced learn value bank 1"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "109A"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_FFT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel filter temperature"}
+  ]},
+{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "10A2"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_AFRL_IDLE_1",  "path": "Engine", "fmt": {           "len": 8, "max": 49, "mul": 99.6, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value idle, bank 1"},
+    {"id": "HILUX_AFRL_LOW_1",   "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 49, "mul": 99.6, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value low, bank 1"},
+    {"id": "HILUX_AFRL_MID_1_1", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 49, "mul": 99.6, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value mid.1, bank 1"},
+    {"id": "HILUX_AFRL_MID_2_1", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 49, "mul": 99.6, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value mid.2, bank 1"},
+    {"id": "HILUX_AFRL_HIGH_1",  "path": "Engine", "fmt": {"bix": 32, "len": 8, "max": 49, "mul": 99.6, "div": 255, "add": -50, "unit": "percent" }, "name": "A/F ratio learn value high, bank 1"}
+  ]},
+{ "hdr": "7B0", "dbg": true, "cmd": {"21": "A6"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_INSPECTION_MODE", "path": "Details", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Inspection mode"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "cmd": {"21": "03"}, "freq": 0.25, "dbgfilter": { "to": 2017, "from": 2019 },
+  "signals": [
+    {"id": "HILUX_FR_VSS", "path": "Movement", "fmt": {           "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
+    {"id": "HILUX_FL_VSS", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
+    {"id": "HILUX_RR_VSS", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"},
+    {"id": "HILUX_RL_VSS", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "05"}, "freq": 0.25,
+  "signals": [
+    {"id": "HILUX_DECEL",  "path": "Orientation", "fmt": {          "len": 8, "max": 18.18, "min": -18.18, "mul": 36.36, "div": 255, "add": -18.18, "unit": "metersPerSecondSquared" }, "name": "Deceleration sensor"},
+    {"id": "HILUX_DECEL2", "path": "Orientation", "fmt": {"bix": 8, "len": 8, "max": 18.18, "min": -18.18, "mul": 36.36, "div": 255, "add": -18.18, "unit": "metersPerSecondSquared" }, "name": "Deceleration sensor, alternate"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "06"}, "freq": 0.25,
+  "signals": [
+    {"id": "HILUX_YAW_RATE",  "path": "Orientation", "fmt": {          "len": 8, "max": 127, "min": -128, "add": -128, "unit": "degrees" }, "name": "Yaw rate sensor"},
+    {"id": "HILUX_YAW_RATE2", "path": "Orientation", "fmt": {"bix": 8, "len": 8, "max": 127, "min": -128, "add": -128, "unit": "degrees" }, "name": "Yaw rate sensor, alternate"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "1D"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_RESERVOIR_WARNING", "path": "Fuel",   "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Reservoir warning"},
+    {"id": "HILUX_MAIN_IDLE",         "path": "Engine", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Main idle"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "1F"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_STOP_LIGHT",    "path": "Control", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "Stop light"},
+    {"id": "HILUX_PARKING_BRAKE", "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake"}
   ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "21"}, "freq": 0.2, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "HILUX_VSS", "path": "Movement", "fmt": { "len": 8, "max": 326, "mul": 1.28, "unit": "kilometersPerHour" }, "name": "Vehicle speed", "suggestedMetric": "speed", "description": "Current vehicle speed."}
   ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "3C"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_STOP_LIGHT_RELAY", "path": "Control", "fmt": { "len": 1, "max": 1, "unit": "offon" }, "name": "Stop light relay"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "3D"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_ABS_WARNING",    "path": "Control", "fmt": {          "len": 1, "max": 1, "unit": "offon" }, "name": "ABS warning"},
+    {"id": "HILUX_BRAKE_WARNING",  "path": "Control", "fmt": {"bix": 1, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake warning"},
+    {"id": "HILUX_SLIP_INDICATOR", "path": "Control", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon" }, "name": "Slip indicator"},
+    {"id": "HILUX_BUZZER",         "path": "Control", "fmt": {"bix": 3, "len": 1, "max": 1, "unit": "offon" }, "name": "Buzzer"},
+    {"id": "HILUX_ECB_WARNING",    "path": "Control", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "offon" }, "name": "ECB warning"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "42"}, "freq": 0.25,
+  "signals": [
+    {"id": "HILUX_FR_ACC", "path": "Movement", "fmt": {           "len": 8, "max": 255, "unit": "metersPerSecondSquared" }, "name": "FR wheel acceleration"},
+    {"id": "HILUX_FL_ACC", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "metersPerSecondSquared" }, "name": "FL wheel acceleration"},
+    {"id": "HILUX_RR_ACC", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 255, "unit": "metersPerSecondSquared" }, "name": "RR wheel acceleration"},
+    {"id": "HILUX_RL_ACC", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "metersPerSecondSquared" }, "name": "RL wheel acceleration"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "46"}, "freq": 0.25,
+  "signals": [
+    {"id": "HILUX_ZP_DEC",      "path": "Control", "fmt": {           "len": 8, "max": 24,  "min": -25.11, "mul": 0.1961568627, "add": -25.11, "unit": "metersPerSecondSquared" }, "name": "Zero point of deceleration"},
+    {"id": "HILUX_ZP_DEC2",     "path": "Control", "fmt": {"bix": 8,  "len": 8, "max": 24,  "min": -25.11, "mul": 0.1961568627, "add": -25.11, "unit": "metersPerSecondSquared" }, "name": "Zero point of deceleration 2"},
+    {"id": "HILUX_ZP_YAW_RATE", "path": "Control", "fmt": {"bix": 16, "len": 8, "max": 127, "min": -128,                        "add": -128,   "unit": "degrees"                }, "name": "Zero point of yaw rate"}
+  ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "47"}, "freq": 0.25, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
     {"id": "HILUX_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
     {"id": "HILUX_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,  "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
-    {"id": "HILUX_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value (degrees/sec)"},
+    {"id": "HILUX_YAW_RATE3",   "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,  "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value (degrees/sec)"},
     {"id": "HILUX_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle",         "description": "Positive = counter-clockwise, negative = clockwise."}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "5A"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_TRC_CTRL",          "path": "Control", "fmt": {           "len": 1, "max": 1, "unit": "offon" }, "name": "Traction control"},
+    {"id": "HILUX_TRC_ENGINE_CTRL",   "path": "Control", "fmt": {"bix": 1,  "len": 1, "max": 1, "unit": "offon" }, "name": "Traction engine control"},
+    {"id": "HILUX_TRC_BRAKE_CTRL",    "path": "Control", "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "offon" }, "name": "Traction brake control"},
+    {"id": "HILUX_FR_WHEEL_VSC_CTRL", "path": "Tires",   "fmt": {"bix": 8,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front right wheel VSC control"},
+    {"id": "HILUX_FL_WHEEL_VSC_CTRL", "path": "Tires",   "fmt": {"bix": 9,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front left wheel VSC control"},
+    {"id": "HILUX_RR_WHEEL_VSC_CTRL", "path": "Tires",   "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel VSC control"},
+    {"id": "HILUX_RL_WHEEL_VSC_CTRL", "path": "Tires",   "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel VSC control"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "5F"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_FR_WHEEL_ABS_CTRL_STATUS", "path": "Tires", "fmt": {           "len": 1, "max": 1, "unit": "offon" }, "name": "Front right wheel ABS status"},
+    {"id": "HILUX_FL_WHEEL_ABS_CTRL_STATUS", "path": "Tires", "fmt": {"bix": 1,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front left wheel ABS status"},
+    {"id": "HILUX_RR_WHEEL_ABS_CTRL_STATUS", "path": "Tires", "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel ABS status"},
+    {"id": "HILUX_RL_WHEEL_ABS_CTRL_STATUS", "path": "Tires", "fmt": {"bix": 3,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel ABS status"},
+    {"id": "HILUX_RR_WHEEL_EBD_CTRL_STATUS", "path": "Tires", "fmt": {"bix": 6,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel EBS status",    "description": "Electronic brakeforce distribution"},
+    {"id": "HILUX_RL_WHEEL_EBD_CTRL_STATUS", "path": "Tires", "fmt": {"bix": 7,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel EBS status",     "description": "Electronic brakeforce distribution"},
+    {"id": "HILUX_BA_CTRL_STATUS",           "path": "Tires", "fmt": {"bix": 11, "len": 1, "max": 1, "unit": "offon" }, "name": "Brake assist status"},
+    {"id": "HILUX_PBA_CTRL_STATUS",          "path": "Tires", "fmt": {"bix": 12, "len": 1, "max": 1, "unit": "offon" }, "name": "Predictive brake assist status"}
+  ]},
+{ "hdr": "7B0", "rax": "7B8", "dbg": true, "cmd": {"21": "BE"}, "freq": 1,
+  "signals": [
+    {"id": "HILUX_FR_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {           "len": 1, "max": 1, "unit": "offon" }, "name": "Front right wheel speed?"},
+    {"id": "HILUX_FL_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {"bix": 1,  "len": 1, "max": 1, "unit": "offon" }, "name": "Front left wheel speed?"},
+    {"id": "HILUX_RR_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {"bix": 2,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear right wheel speed?"},
+    {"id": "HILUX_RL_WHEEL_SPEED_OPEN",    "path": "Movement",    "fmt": {"bix": 3,  "len": 1, "max": 1, "unit": "offon" }, "name": "Rear left wheel speed?"},
+    {"id": "HILUX_YAW_RATE_ERROR",         "path": "Orientation", "fmt": {"bix": 5,  "len": 1, "max": 1, "unit": "noyes" }, "name": "Yaw rate open error?"},
+    {"id": "HILUX_DECELERATION_OPEN",      "path": "Orientation", "fmt": {"bix": 6,  "len": 1, "max": 1, "unit": "offon" }, "name": "Deceleration open"},
+    {"id": "HILUX_MASTER_CYLINDER_OPEN",   "path": "Engine",      "fmt": {"bix": 8,  "len": 1, "max": 1, "unit": "offon" }, "name": "Master cylinder open"},
+    {"id": "HILUX_STROKE_OPEN",            "path": "Engine",      "fmt": {"bix": 10, "len": 1, "max": 1, "unit": "offon" }, "name": "Stroke open"},
+    {"id": "HILUX_FR_WHEEL_CYLINDER_OPEN", "path": "Tires",       "fmt": {"bix": 12, "len": 1, "max": 1, "unit": "offon" }, "name": "Front right wheel cylinder open"},
+    {"id": "HILUX_ACCUMULATOR_OPEN",       "path": "Engine",      "fmt": {"bix": 16, "len": 1, "max": 1, "unit": "offon" }, "name": "Accumulator open"},
+    {"id": "HILUX_HV_COMMUNICATION_OPEN",  "path": "Engine",      "fmt": {"bix": 17, "len": 1, "max": 1, "unit": "offon" }, "name": "HV communication open"}
   ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"22": "1006"}, "freq": 5, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
   "signals": [
-    {"id": "HILUX_MASTER_CYL_TEMP", "path": "Brakes", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
+    {"id": "HILUX_MASTER_CYL_TEMP", "path": "Engine", "fmt": { "len": 8, "max": 100, "min": -20, "add": -80, "unit": "celsius" }, "name": "Master cylinder sensor temperature"}
   ]},
 { "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 5, "dbgfilter": { "to": 2017, "years": [2019, 2020, 2023], "from": 2025 },
   "signals": [
@@ -41,29 +184,11 @@
   ]},
 { "hdr": "7D0", "rax": "7D8", "cmd": {"21": "62"}, "freq": 1, "dbgfilter": { "to": 2020, "years": [2023], "from": 2025 },
   "signals": [
-    {"id": "HILUX_PARKING_BRAKE", "path": "Control", "name": "Parking brake", "fmt": {"len": 8, "map": {
-          "1":   { "description": "", "value": "Off" },
-          "3":   { "description": "", "value": "On" },
-          "5":   { "description": "", "value": "Off" },
-          "7":   { "description": "", "value": "On" },
-          "9":   { "description": "", "value": "Off" },
-          "11":  { "description": "", "value": "On" },
-          "16":  { "description": "", "value": "Off" },
-          "48":  { "description": "", "value": "On" },
-          "144": { "description": "", "value": "Off" },
-          "176": { "description": "", "value": "On" },
-          "208": { "description": "", "value": "Off" },
-          "240": { "description": "", "value": "On" }
-        }}
-    }
+    {"id": "HILUX_PARKING_BRAKE_2", "path": "Control", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Parking brake"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 1, "dbgfilter": { "to": 2012, "from": 2014 },
   "signals": [
     {"id": "HILUX_CC_S", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
-  ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "28"}, "freq": 5, "dbgfilter": { "to": 2017, "from": 2019 },
-  "signals": [
-    {"id": "HILUX_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
