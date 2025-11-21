@@ -5,8 +5,8 @@ test_cases:
     HILUX_EOP: 7.42188
   response: 70805621074005F
 - expected_values:
-    HILUX_ENG_OIL_PRESS: 120.0
-    HILUX_EOP: 120.0
+    HILUX_ENG_OIL_PRESS: 120
+    HILUX_EOP: 120
   response: '708056210740600'
 - expected_values:
     HILUX_ENG_OIL_PRESS: 499.92188
