@@ -1,10 +1,10 @@
 { "commands": [
-{ "hdr": "700", "dbg": true, "cmd": {"22": "1041"}, "freq": 1,
+{ "hdr": "700", "cmd": {"22": "1041"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_ECT_IGN",  "path": "Engine", "fmt": {          "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, ignition on"},
     {"id": "HILUX_ECT_INIT", "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 119.375, "min": -40, "mul": 62.5, "div": 100, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature, initial"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1002"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1002"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_12V_V", "path": "Battery", "fmt": { "len": 16, "max": 15, "mul": 12.207, "div": 10000, "unit": "volts" }, "name": "Battery voltage", "suggestedMetric": "starterBatteryVoltage"}
   ]},
@@ -20,7 +20,7 @@
   "signals": [
     {"id": "HILUX_FP_DUTY_RATIO", "path": "Fuel", "fmt": { "len": 16, "max": 3996.0365853659, "mul": 0.0609756098, "unit": "kilopascal" }, "name": "Fuel pump duty ratio"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "106C"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "106C"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_12V_DISCONNECT_ODO", "path": "Battery", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance since last battery cable disconnection"}
   ]},
@@ -32,7 +32,7 @@
   "signals": [
     {"id": "HILUX_IWP_SPEED", "path": "Movement", "fmt": { "len": 16, "max": 300, "min": -40, "mul": 238212, "div": 10000, "add": -256000, "unit": "celsius" }, "name": "Intercooler water pump speed"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1084"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1084"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_ROUGH_IDLE_4", "path": "Engine", "fmt": {"bix": 28, "len": 1, "max": 1, "unit": "offon" }, "name": "Rough idle cyl.4"},
     {"id": "HILUX_ROUGH_IDLE_3", "path": "Engine", "fmt": {"bix": 29, "len": 1, "max": 1, "unit": "offon" }, "name": "Rough idle cyl.3"},
