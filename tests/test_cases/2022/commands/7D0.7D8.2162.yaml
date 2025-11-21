@@ -1,26 +1,26 @@
 command_id: 7D0.7D8.2162
 test_cases:
 - expected_values:
-    HILUX_PARKING_BRAKE: 'On'
+    HILUX_PARKING_BRAKE_2: 1
   response: |-
     2162
     7D80561620B0000
 - expected_values:
-    HILUX_PARKING_BRAKE: 'On'
+    HILUX_PARKING_BRAKE_2: 0
   response: |-
     21621
-    7D8056162030000
+    7D8056162020000
 - expected_values:
-    HILUX_PARKING_BRAKE: 'On'
+    HILUX_PARKING_BRAKE_2: 1
   response: |-
     21621
     7D80561620B0000
 - expected_values:
-    HILUX_PARKING_BRAKE: 'Off'
-  response: 7D8056162010000
+    HILUX_PARKING_BRAKE_2: 0
+  response: 7D8056162000000
 - expected_values:
-    HILUX_PARKING_BRAKE: 'Off'
+    HILUX_PARKING_BRAKE_2: 1
   response: 7D8056162017E00
 - expected_values:
-    HILUX_PARKING_BRAKE: 'On'
-  response: 7D80561620B0000
+    HILUX_PARKING_BRAKE_2: 1
+  response: 7D80561621D0000
