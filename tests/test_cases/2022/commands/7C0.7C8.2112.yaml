@@ -13,6 +13,13 @@ test_cases:
     HILUX_TAIL_CANCEL: 0
   response: |-
     7C8100A611200000000
+    7C821C0008000000000
+- expected_values:
+    HILUX_CHECK_ENGINE: 0
+    HILUX_P_SEATBELT_BUCKLE: 0
+    HILUX_TAIL_CANCEL: 0
+  response: |-
+    7C8100A611200000000
     7C821C0010000000000
 - expected_values:
     HILUX_CHECK_ENGINE: 0

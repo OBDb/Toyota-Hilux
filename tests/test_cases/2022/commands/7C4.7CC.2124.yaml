@@ -4,8 +4,5 @@ test_cases:
     HILUX_SOLAR_DRIVER: 1
   response: 7CC03612401
 - expected_values:
-    HILUX_SOLAR_DRIVER: 2
-  response: 7CC03612402
-- expected_values:
-    HILUX_SOLAR_DRIVER: 3
-  response: 7CC03612403
+    HILUX_SOLAR_DRIVER: 181
+  response: 7CC036124B5

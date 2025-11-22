@@ -3,3 +3,12 @@ test_cases:
 - expected_values:
     HILUX_BLOWER_MOTOR_SPEED_LEVEL: 1
   response: 7CC03613C01
+- expected_values:
+    HILUX_BLOWER_MOTOR_SPEED_LEVEL: 7
+  response: 7CC03613C07
+- expected_values:
+    HILUX_BLOWER_MOTOR_SPEED_LEVEL: 8
+  response: 7CC03613C08
+- expected_values:
+    HILUX_BLOWER_MOTOR_SPEED_LEVEL: 9
+  response: 7CC03613C09
