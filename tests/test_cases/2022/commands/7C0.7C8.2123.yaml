@@ -1,0 +1,14 @@
+command_id: 7C0.7C8.2123
+test_cases:
+- expected_values:
+    HILUX_COOLANT_T: 0
+  response: 7C803612300
+- expected_values:
+    HILUX_COOLANT_T: 84
+  response: 7C8036123A8
+- expected_values:
+    HILUX_COOLANT_T: 84.5
+  response: 7C8036123A9
+- expected_values:
+    HILUX_COOLANT_T: 85
+  response: 7C8036123AA

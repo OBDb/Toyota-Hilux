@@ -190,7 +190,7 @@
   ]},
 { "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "21"}, "freq": 1,
   "signals": [
-    {"id": "HILUX_VSS_7C0", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed, 7C0"}
+    {"id": "HILUX_VSS_7C0", "path": "Movement", "fmt": { "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Vehicle speed, 7C0", "suggestedMetric": "speed"}
   ]},
 { "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "23"}, "freq": 1,
   "signals": [
@@ -257,14 +257,14 @@
   "signals": [
     {"id": "HILUX_CALCULATED_LOAD_7E0",      "path": "Engine",   "fmt": {            "len": 8,  "max": 100,                "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Calculated load_7e0"},
     {"id": "HILUX_VEHICLE_LOAD",             "path": "Engine",   "fmt": {"bix": 8,   "len": 16, "max": 100,                "mul": 100, "div": 65535,             "unit": "percent"           }, "name": "Vehicle load"},
-    {"id": "HILUX_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                                                   "unit": "gramsPerSecond"    }, "name": "MAF"},
+    {"id": "HILUX_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                                                   "unit": "gramsPerSecond"    }, "name": "Mass air flow",                "suggestedMetric": "massAirFlow"},
     {"id": "HILUX_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                      "unit": "kilopascal"        }, "name": "MAP"},
     {"id": "HILUX_INTAKE_AIR",               "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Intake air"},
     {"id": "HILUX_AMBIENT_T",                "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Ambient temperature"},
     {"id": "HILUX_ATMOSPHERE_PRESSURE",      "path": "Engine",   "fmt": {"bix": 64,  "len": 8,  "max": 255,                                                      "unit": "kilopascal"        }, "name": "Atmosphere pressure"},
     {"id": "HILUX_COOLANT_TEMP",             "path": "Engine",   "fmt": {"bix": 72,  "len": 8,  "max": 215,    "min": -40,                                       "unit": "celsius"           }, "name": "Coolant temp"},
     {"id": "HILUX_ENGINE_SPEED",             "path": "Movement", "fmt": {"bix": 80,  "len": 16, "max": 16383,                                                    "unit": "rpm"               }, "name": "Engine speed"},
-    {"id": "HILUX_VEHICLE_SPEED",            "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Vehicle speed"},
+    {"id": "HILUX_VEHICLE_SPEED",            "path": "Movement", "fmt": {"bix": 96,  "len": 8,  "max": 255,                                                      "unit": "kilometersPerHour" }, "name": "Vehicle speed",                "suggestedMetric": "speed"},
     {"id": "HILUX_ENGINE_RUN_TIME",          "path": "Engine",   "fmt": {"bix": 104, "len": 16, "max": 65535,                                                    "unit": "seconds"           }, "name": "Engine run time"},
     {"id": "HILUX_THROTTLE_SENSOR_POSITION", "path": "Engine",   "fmt": {"bix": 120, "len": 8,  "max": 100,                "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor position"},
     {"id": "HILUX_THROTTLE_SENSOR_VOLT",     "path": "Engine",   "fmt": {"bix": 128, "len": 8,  "max": 100,                "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor volt %, 1"},
