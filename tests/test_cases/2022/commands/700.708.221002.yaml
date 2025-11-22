@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     HILUX_12V_V: 13.73532
   response: 708056210022BF4
+- expected_values:
+    HILUX_12V_V: 13.75973
+  response: 708056210022C08
