@@ -1,0 +1,5 @@
+command_id: 7C0.21A7
+test_cases:
+- expected_values:
+    HILUX_SEAT_BELT_BEEP: 224
+  response: 7C80361A7E0
