@@ -1,0 +1,11 @@
+command_id: 7C4.7CC.2126
+test_cases:
+- expected_values:
+    HILUX_ECT: 83.9
+  response: 7CC036126EC
+- expected_values:
+    HILUX_ECT: 84.6
+  response: 7CC036126EE
+- expected_values:
+    HILUX_ECT: 84.95
+  response: 7CC036126EF

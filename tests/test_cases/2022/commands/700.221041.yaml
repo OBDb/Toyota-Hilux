@@ -4,3 +4,7 @@ test_cases:
     HILUX_ECT_IGN: 72.5
     HILUX_ECT_INIT: 72.5
   response: 70805621041B4B4
+- expected_values:
+    HILUX_ECT_IGN: 83.125
+    HILUX_ECT_INIT: 83.125
+  response: 70805621041C5C5
