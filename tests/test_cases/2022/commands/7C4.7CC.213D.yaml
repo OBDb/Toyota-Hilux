@@ -4,5 +4,5 @@ test_cases:
     HILUX_ADJUSTED_AMBIENT_T: 25.52
   response: 7CC03613DB0
 - expected_values:
-    HILUX_ADJUSTED_AMBIENT_T: 31.28
-  response: 7CC03613DC2
+    HILUX_ADJUSTED_AMBIENT_T: 33.84
+  response: 7CC03613DCA
