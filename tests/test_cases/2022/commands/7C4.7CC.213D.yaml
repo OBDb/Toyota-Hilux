@@ -1,8 +1,8 @@
 command_id: 7C4.7CC.213D
 test_cases:
 - expected_values:
-    HILUX_ADJUSTED_AMBIENT_T: 24.88
-  response: 7CC03613DAE
+    HILUX_ADJUSTED_AMBIENT_T: 22.32
+  response: 7CC03613DA6
 - expected_values:
     HILUX_ADJUSTED_AMBIENT_T: 34.8
   response: 7CC03613DCD
