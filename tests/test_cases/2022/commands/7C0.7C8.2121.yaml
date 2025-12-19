@@ -4,5 +4,5 @@ test_cases:
     HILUX_VSS_7C0: 0
   response: 7C803612100
 - expected_values:
-    HILUX_VSS_7C0: 117
-  response: 7C803612175
+    HILUX_VSS_7C0: 127
+  response: 7C80361217F
