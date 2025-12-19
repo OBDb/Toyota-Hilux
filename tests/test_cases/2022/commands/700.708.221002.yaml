@@ -1,8 +1,8 @@
 command_id: 700.708.221002
 test_cases:
 - expected_values:
-    HILUX_12V_V: 12.37302
-  response: '708056210022798'
+    HILUX_12V_V: 12.207
+  response: '708056210022710'
 - expected_values:
     HILUX_12V_V: 13.43258
   response: 708056210022AFC
