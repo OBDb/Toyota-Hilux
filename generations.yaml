@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Toyota_Hilux"
+
 generations:
   - name: "First Generation (N10)"
     start_year: 1968
