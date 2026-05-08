@@ -1,8 +1,8 @@
 command_id: 7C4.7CC.2121
 test_cases:
 - expected_values:
-    HILUX_CABIN_T: 18.75
-  response: 7CC03612165
+    HILUX_CABIN_T: 14.5
+  response: 7CC03612154
 - expected_values:
     HILUX_CABIN_T: 38.5
   response: 7CC036121B4
