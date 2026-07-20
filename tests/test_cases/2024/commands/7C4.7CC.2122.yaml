@@ -1,0 +1,11 @@
+command_id: 7C4.7CC.2122
+test_cases:
+- expected_values:
+    HILUX_AAT: 21.15
+  response: 7CC0361227F
+- expected_values:
+    HILUX_AAT: 21.5
+  response: 7CC03612280
+- expected_values:
+    HILUX_AAT: 21.85
+  response: 7CC03612281

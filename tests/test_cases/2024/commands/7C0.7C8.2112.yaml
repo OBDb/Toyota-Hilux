@@ -1,0 +1,9 @@
+command_id: 7C0.7C8.2112
+test_cases:
+- expected_values:
+    HILUX_CHECK_ENGINE: 0
+    HILUX_P_SEATBELT_BUCKLE: 0
+    HILUX_TAIL_CANCEL: 0
+  response: |-
+    7C8100A611201000000
+    7C821C001C000000000
