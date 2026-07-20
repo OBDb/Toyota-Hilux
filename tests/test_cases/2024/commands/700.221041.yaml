@@ -1,0 +1,14 @@
+command_id: '700.221041'
+test_cases:
+- expected_values:
+    HILUX_ECT_IGN: 58.125
+    HILUX_ECT_INIT: 55.625
+  response: 708056210419D99
+- expected_values:
+    HILUX_ECT_IGN: 58.125
+    HILUX_ECT_INIT: 56.25
+  response: 708056210419D9A
+- expected_values:
+    HILUX_ECT_IGN: 58.125
+    HILUX_ECT_INIT: 58.125
+  response: 708056210419D9D

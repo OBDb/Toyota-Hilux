@@ -1,6 +1,9 @@
 command_id: 7C0.7C8.2129
 test_cases:
 - expected_values:
+    HILUX_FLI_VOL: 8.85073
+  response: 7C803612943
+- expected_values:
     HILUX_FLI_VOL: 11.09643
   response: 7C803612954
 - expected_values:
