@@ -1,4 +1,4 @@
-command_id: '700.221041'
+command_id: 700.708.221041
 test_cases:
 - expected_values:
     HILUX_ECT_IGN: 64.375
