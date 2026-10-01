@@ -1,0 +1,32 @@
+command_id: 700.708.221627
+test_cases:
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 30.625
+  response: 7080562162746A0
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 32.5
+  response: '708056216274880'
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 33.75
+  response: 7080562162749C0
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 34.375
+  response: 708056216274A60
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 35
+  response: 708056216274B00
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 36.875
+  response: 708056216274CE0
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 38.125
+  response: '708056216274E20'
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 41.25
+  response: '708056216275140'
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 42.5
+  response: '708056216275280'
+- expected_values:
+    HILUX_ATF_T_PAN_V3: 45
+  response: '708056216275500'

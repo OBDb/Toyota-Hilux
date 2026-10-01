@@ -1,0 +1,8 @@
+command_id: 700.708.221105
+test_cases:
+- expected_values:
+    HILUX_PM_ACCUMULATION_RAT_1: 15
+  response: 708046211050E
+- expected_values:
+    HILUX_PM_ACCUMULATION_RAT_1: 15
+  response: 708046211050F
