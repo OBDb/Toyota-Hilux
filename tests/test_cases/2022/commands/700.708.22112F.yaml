@@ -1,0 +1,32 @@
+command_id: 700.708.22112F
+test_cases:
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 0.28477
+  response: 7080562112F800F
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 0.40196
+  response: 7080562112F8015
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 9.85496
+  response: 7080562112F81F9
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F856B
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8704
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8751
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8A21
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8B34
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8C15
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8D7D

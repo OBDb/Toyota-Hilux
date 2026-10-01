@@ -1,0 +1,62 @@
+command_id: 700.708.22113E
+test_cases:
+- expected_values:
+    HILUX_FUEL_T_1: 26
+    HILUX_FUEL_T_2: 27
+    HILUX_FUEL_T_3: 28
+    HILUX_FUEL_T_4: 26
+  response: '7080762113E42434442'
+- expected_values:
+    HILUX_FUEL_T_1: 28
+    HILUX_FUEL_T_2: 28
+    HILUX_FUEL_T_3: 28
+    HILUX_FUEL_T_4: 28
+  response: '7080762113E44444444'
+- expected_values:
+    HILUX_FUEL_T_1: 30
+    HILUX_FUEL_T_2: 30
+    HILUX_FUEL_T_3: 30
+    HILUX_FUEL_T_4: 30
+  response: '7080762113E46464646'
+- expected_values:
+    HILUX_FUEL_T_1: 31
+    HILUX_FUEL_T_2: 31
+    HILUX_FUEL_T_3: 31
+    HILUX_FUEL_T_4: 30
+  response: '7080762113E47474746'
+- expected_values:
+    HILUX_FUEL_T_1: 31
+    HILUX_FUEL_T_2: 31
+    HILUX_FUEL_T_3: 31
+    HILUX_FUEL_T_4: 32
+  response: '7080762113E47474748'
+- expected_values:
+    HILUX_FUEL_T_1: 33
+    HILUX_FUEL_T_2: 34
+    HILUX_FUEL_T_3: 33
+    HILUX_FUEL_T_4: 33
+  response: 7080762113E494A4949
+- expected_values:
+    HILUX_FUEL_T_1: 35
+    HILUX_FUEL_T_2: 35
+    HILUX_FUEL_T_3: 35
+    HILUX_FUEL_T_4: 34
+  response: 7080762113E4B4B4B4A
+- expected_values:
+    HILUX_FUEL_T_1: 37
+    HILUX_FUEL_T_2: 38
+    HILUX_FUEL_T_3: 36
+    HILUX_FUEL_T_4: 36
+  response: 7080762113E4D4E4C4C
+- expected_values:
+    HILUX_FUEL_T_1: 39
+    HILUX_FUEL_T_2: 40
+    HILUX_FUEL_T_3: 38
+    HILUX_FUEL_T_4: 38
+  response: 7080762113E4F504E4E
+- expected_values:
+    HILUX_FUEL_T_1: 43
+    HILUX_FUEL_T_2: 43
+    HILUX_FUEL_T_3: 41
+    HILUX_FUEL_T_4: 41
+  response: '7080762113E53535151'

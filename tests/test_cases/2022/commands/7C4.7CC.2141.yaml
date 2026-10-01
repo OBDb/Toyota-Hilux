@@ -1,0 +1,18 @@
+command_id: 7C4.7CC.2141
+test_cases:
+- expected_values:
+    HILUX_AIR_MIX_SERVO_ACT_D: 127
+    HILUX_AIR_MIX_SERVO_TARG_D: 127
+  response: 7CC0661417F7F01D4
+- expected_values:
+    HILUX_AIR_MIX_SERVO_ACT_D: 128
+    HILUX_AIR_MIX_SERVO_TARG_D: 128
+  response: 7CC066141808001D4
+- expected_values:
+    HILUX_AIR_MIX_SERVO_ACT_D: 131
+    HILUX_AIR_MIX_SERVO_TARG_D: 131
+  response: 7CC066141838301D4
+- expected_values:
+    HILUX_AIR_MIX_SERVO_ACT_D: 132
+    HILUX_AIR_MIX_SERVO_TARG_D: 132
+  response: 7CC066141848401D4
