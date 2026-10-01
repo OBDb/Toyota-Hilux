@@ -165,47 +165,47 @@
   "signals": [
     {"id": "HILUX_LFP", "path": "Fuel", "fmt": { "len": 16, "max": 3276.7, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Low fuel pressure"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1105"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1105"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_PM_ACCUMULATION_RAT_1", "path": "Engine", "fmt": { "len": 8, "max": 15, "mul": 2, "unit": "percent" }, "name": "PM accumulation ratio - bank 1"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "112B"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "112B"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_INJ_FEEDBACK_1", "path": "Engine", "fmt": {           "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 1"},
     {"id": "HILUX_INJ_FEEDBACK_2", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 2"},
     {"id": "HILUX_INJ_FEEDBACK_3", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 3"},
     {"id": "HILUX_INJ_FEEDBACK_4", "path": "Engine", "fmt": {"bix": 24, "len": 8, "max": 15, "min": -20, "mul": 5, "div": 32, "add": -20, "unit": "unknown" }, "name": "Injection feedback value 4"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "112C"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "112C"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_INJ_VOLUME_TGT", "path": "Engine", "fmt": { "len": 16, "max": 15, "mul": 19531, "div": 1000000, "unit": "unknown" }, "name": "Injection volume - target"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "112F"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "112F"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_INJ_VOLUME_TOT", "path": "Engine", "fmt": { "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume total"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1131"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1131"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_CYL_1_INJ_VOLUME", "path": "Engine", "fmt": {           "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 1 injection volume"},
     {"id": "HILUX_CYL_2_INJ_VOLUME", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 2 injection volume"},
     {"id": "HILUX_CYL_3_INJ_VOLUME", "path": "Engine", "fmt": {"bix": 32, "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 3 injection volume"},
     {"id": "HILUX_CYL_4_INJ_VOLUME", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 15, "min": -640, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Cylinder 4 injection volume"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "113C"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "113C"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_FUEL_P_1", "path": "Fuel", "fmt": {           "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 1"},
     {"id": "HILUX_FUEL_P_2", "path": "Fuel", "fmt": {"bix": 16, "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 2"},
     {"id": "HILUX_FUEL_P_3", "path": "Fuel", "fmt": {"bix": 32, "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 3"},
     {"id": "HILUX_FUEL_P_4", "path": "Fuel", "fmt": {"bix": 48, "len": 16, "max": 50000, "mul": 10, "unit": "kilopascal" }, "name": "Fuel pressure 4"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "113E"}, "freq": 5,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "113E"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_FUEL_T_1", "path": "Fuel", "fmt": {           "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 1"},
     {"id": "HILUX_FUEL_T_2", "path": "Fuel", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 2"},
     {"id": "HILUX_FUEL_T_3", "path": "Fuel", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 3"},
     {"id": "HILUX_FUEL_T_4", "path": "Fuel", "fmt": {"bix": 24, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel temperature 4"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1141"}, "freq": 5,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1141"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_FUEL_RETURN_T", "path": "Fuel", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Fuel return temperature"}
   ]},
@@ -217,7 +217,7 @@
     {"id": "HILUX_INJ_VOLUME_5", "path": "Engine", "fmt": {"bix": 48, "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 5"},
     {"id": "HILUX_INJ_VOLUME_6", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 300, "min": -40, "mul": 19531, "div": 1000000, "add": -640, "unit": "unknown" }, "name": "Injection volume 6"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "119B"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "119B"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_DPF_REGEN_STAT", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Diesel particulate and nitrogen oxide reduction regeneration status"}
   ]},
@@ -297,15 +297,15 @@
   "signals": [
     {"id": "HILUX_BAT_T_700", "path": "Battery", "fmt": { "len": 16, "max": 6513.5, "min": -40, "div": 10, "add": -40, "unit": "celsius" }, "name": "Battery temperature"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "15FA"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "15FA"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_ALT_DUTY_CYCLE", "path": "Engine", "fmt": { "len": 16, "max": 399, "div": 164, "unit": "percent" }, "name": "Alternator output duty cycle"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1620"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1620"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_AT_LOCK_UP_STATE", "path": "Transmission", "fmt": {"bix": 7, "len": 1, "max": 1, "unit": "offon" }, "name": "Lock up state"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1621"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1621"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_GEAR_700", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
   ]},
@@ -313,11 +313,11 @@
   "signals": [
     {"id": "HILUX_TRANS_SHIFT_ST_RAT", "path": "Transmission", "fmt": { "len": 16, "max": 15.999, "mul": 5333, "div": 21845000, "unit": "scalar" }, "name": "Transmission shift state ratio"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1627"}, "freq": 5,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1627"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_ATF_T_PAN_V3", "path": "Transmission", "fmt": { "len": 16, "max": 215, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature, pan var.3", "suggestedMetric": "transmissionFluidTemperature"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1628"}, "freq": 5,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1628"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_TRANS_FLUID_POST_T_3", "path": "Transmission", "fmt": { "len": 16, "max": 215.996, "min": -40, "div": 256, "add": -40, "unit": "celsius" }, "name": "Transmission fluid post-converter temperature, variant 3"}
   ]},
@@ -345,7 +345,7 @@
   "signals": [
     {"id": "HILUX_CAT_T_BANK_2_SENS_2", "path": "Engine", "fmt": { "len": 16, "max": 11756.3, "min": -40, "mul": 9, "div": 50, "add": -40, "unit": "fahrenheit" }, "name": "Catalyst temperature bank 2 sensor 2"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F46"}, "freq": 5,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1F46"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_AMBIENT_T_700", "path": "Climate", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Ambient temperature"}
   ]},
@@ -353,18 +353,18 @@
   "signals": [
     {"id": "HILUX_EOT_V2", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine oil temperature, variation 2", "suggestedMetric": "engineOilTemperature"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F6D"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1F6D"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_HFP_TARGET",        "path": "Fuel", "fmt": {"bix": 8,  "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "High fuel pressure, target"},
     {"id": "HILUX_HFP_ACTUAL",        "path": "Fuel", "fmt": {"bix": 24, "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "High fuel pressure, actual"},
     {"id": "HILUX_LOW_FUEL_PRESSURE", "path": "Fuel", "fmt": {"bix": 64, "len": 16, "max": 655350, "mul": 10, "unit": "kilopascal" }, "name": "Low fuel pressure"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F77"}, "freq": 5,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1F77"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_IAT_B1S1", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 1"},
     {"id": "HILUX_IAT_B1S2", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 2"}
   ]},
-{ "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1F7A"}, "freq": 1,
+{ "hdr": "700", "rax": "708", "cmd": {"22": "1F7A"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_DPF_DIFF_P", "path": "Engine", "fmt": {"bix": 8, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "kilopascal" }, "name": "Diesel particulate filter differential pressure"}
   ]},
@@ -405,7 +405,7 @@
     {"id": "HILUX_ENG_FUEL_RATE", "path": "Fuel", "fmt": {           "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Engine fuel rate"},
     {"id": "HILUX_VEH_FUEL_RATE", "path": "Fuel", "fmt": {"bix": 16, "len": 16, "max": 1310.7, "div": 50, "unit": "gramsPerSecond" }, "name": "Vehicle fuel rate"}
   ]},
-{ "hdr": "780", "rax": "788", "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+{ "hdr": "780", "rax": "788", "cmd": {"21": "04"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_BUCKLE_RS", "path": "Seatbelts", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "scalar" }, "name": "Buckle switch, right side"},
     {"id": "HILUX_BUCKLE_LS", "path": "Seatbelts", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Buckle switch, left side"}
@@ -560,7 +560,7 @@
     {"id": "HILUX_P_SEATBELT_BUCKLE", "path": "Seatbelts", "fmt": {"bix": 8,  "len": 1, "max": 1, "unit": "offon" }, "name": "P-seatbelt buckle"},
     {"id": "HILUX_CHECK_ENGINE",      "path": "Control",   "fmt": {"bix": 15, "len": 1, "max": 1, "unit": "offon" }, "name": "Check engine"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "13"}, "freq": 5,
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "13"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_BAT_V", "path": "Battery", "fmt": { "len": 8, "max": 25.5, "div": 10, "unit": "volts" }, "name": "Battery voltage"}
   ]},
@@ -584,7 +584,7 @@
   "signals": [
     {"id": "HILUX_RHEOSTAT", "path": "Lights", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Rheostat", "description": "Higher values are brighter"}
   ]},
-{ "hdr": "7C0", "rax": "7C8", "dbg": true, "cmd": {"21": "A1"}, "freq": 1,
+{ "hdr": "7C0", "rax": "7C8", "cmd": {"21": "A1"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_KEY_REMIND_SOUND", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Key remind sound"}
   ]},
@@ -632,7 +632,7 @@
   "signals": [
     {"id": "HILUX_ADJUSTED_AMBIENT_T", "path": "Climate", "fmt": { "len": 8, "max": 50.8, "min": -30.8, "mul": 81.6, "div": 255, "add": -30.8, "unit": "celsius" }, "name": "Adjusted ambient temperature"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "41"}, "freq": 1,
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "41"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_AIR_MIX_SERVO_TARG_D", "path": "Engine", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air mix servo target pulse, driver"},
     {"id": "HILUX_AIR_MIX_SERVO_ACT_D",  "path": "Engine", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air mix servo, actual pulse, d"}
@@ -642,7 +642,7 @@
     {"id": "HILUX_AIR_OUTLET_SERVO_PULSE_D",      "path": "Climate", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air outlet servo pulse, driver"},
     {"id": "HILUX_AIR_OUTLET_SERVO_ACTU_PULSE_D", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air outlet servo actu pulse, driver"}
   ]},
-{ "hdr": "7C4", "rax": "7CC", "dbg": true, "cmd": {"21": "44"}, "freq": 1,
+{ "hdr": "7C4", "rax": "7CC", "cmd": {"21": "44"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
     {"id": "HILUX_AIR_INLET_DAMPER_TARGET_PULSE", "path": "Climate", "fmt": {          "len": 8, "max": 255, "unit": "scalar" }, "name": "Air inlet damper target pulse"},
     {"id": "HILUX_AIR_INLET_DAMPER_ACTUAL_PULSE", "path": "Climate", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "scalar" }, "name": "Air inlet damper actual pulse"}

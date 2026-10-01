@@ -1,0 +1,5 @@
+command_id: 700.708.22119B
+test_cases:
+- expected_values:
+    HILUX_DPF_REGEN_STAT: 0
+  response: 7080462119B00
