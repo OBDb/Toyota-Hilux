@@ -4,29 +4,11 @@ test_cases:
     HILUX_TRANS_FLUID_POST_T_3: 33.125
   response: '708056216284920'
 - expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 35.625
-  response: 708056216284BA0
-- expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 36.25
-  response: 708056216284C40
-- expected_values:
     HILUX_TRANS_FLUID_POST_T_3: 36.875
   response: 708056216284CE0
-- expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 37.5
-  response: 708056216284D80
-- expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 39.375
-  response: 708056216284F60
-- expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 41.25
-  response: '708056216285140'
-- expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 43.75
-  response: 7080562162853C0
 - expected_values:
     HILUX_TRANS_FLUID_POST_T_3: 45
   response: '708056216285500'
 - expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 47.5
-  response: '708056216285780'
+    HILUX_TRANS_FLUID_POST_T_3: 63.75
+  response: 7080562162867C0

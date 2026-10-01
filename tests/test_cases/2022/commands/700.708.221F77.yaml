@@ -1,16 +1,46 @@
 command_id: 700.708.221F77
 test_cases:
 - expected_values:
+    HILUX_IAT_B1S1: 22
+    HILUX_IAT_B1S2: -40
+  response: |-
+    7081008621F77013E00
+    7082100000000000000
+- expected_values:
+    HILUX_IAT_B1S1: 23
+    HILUX_IAT_B1S2: -40
+  response: |-
+    7081008621F77013F00
+    7082100000000000000
+- expected_values:
+    HILUX_IAT_B1S1: 25
+    HILUX_IAT_B1S2: -40
+  response: |-
+    7081008621F77014100
+    7082100000000000000
+- expected_values:
     HILUX_IAT_B1S1: 27
     HILUX_IAT_B1S2: -40
   response: |-
     7081008621F77014300
     7082100000000000000
 - expected_values:
+    HILUX_IAT_B1S1: 28
+    HILUX_IAT_B1S2: -40
+  response: |-
+    7081008621F77014400
+    7082100000000000000
+- expected_values:
     HILUX_IAT_B1S1: 29
     HILUX_IAT_B1S2: -40
   response: |-
     7081008621F77014500
+    7082100000000000000
+- expected_values:
+    HILUX_IAT_B1S1: 33
+    HILUX_IAT_B1S2: -40
+  response: |-
+    7081008621F77014900
     7082100000000000000
 - expected_values:
     HILUX_IAT_B1S1: 35
