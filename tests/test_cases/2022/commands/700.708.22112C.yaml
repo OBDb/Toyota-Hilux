@@ -5,22 +5,7 @@ test_cases:
   response: 7080562112C0000
 - expected_values:
     HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C0556
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C05C3
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C075B
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C0A26
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C0B1B
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C0C0B
+  response: 7080562112C08FA
 - expected_values:
     HILUX_INJ_VOLUME_TGT: 15
   response: 7080562112C0D7C

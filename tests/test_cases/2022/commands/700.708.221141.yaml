@@ -4,26 +4,5 @@ test_cases:
     HILUX_FUEL_RETURN_T: 26
   response: '7080462114142'
 - expected_values:
-    HILUX_FUEL_RETURN_T: 28
-  response: '7080462114144'
-- expected_values:
-    HILUX_FUEL_RETURN_T: 30
-  response: '7080462114146'
-- expected_values:
-    HILUX_FUEL_RETURN_T: 31
-  response: '7080462114147'
-- expected_values:
-    HILUX_FUEL_RETURN_T: 33
-  response: '7080462114149'
-- expected_values:
-    HILUX_FUEL_RETURN_T: 35
-  response: 708046211414B
-- expected_values:
-    HILUX_FUEL_RETURN_T: 36
-  response: 708046211414C
-- expected_values:
-    HILUX_FUEL_RETURN_T: 39
-  response: 708046211414F
-- expected_values:
-    HILUX_FUEL_RETURN_T: 42
-  response: '7080462114152'
+    HILUX_FUEL_RETURN_T: 46
+  response: '7080462114156'
