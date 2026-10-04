@@ -18,3 +18,15 @@ test_cases:
 - expected_values:
     HILUX_ENG_ODO: 91873
   response: '70807620103010166E1'
+- expected_values:
+    HILUX_ENG_ODO: 91888
+  response: 70807620103010166F0
+- expected_values:
+    HILUX_ENG_ODO: 91889
+  response: 70807620103010166F1
+- expected_values:
+    HILUX_ENG_ODO: 91890
+  response: 70807620103010166F2
+- expected_values:
+    HILUX_ENG_ODO: 91891
+  response: 70807620103010166F3
