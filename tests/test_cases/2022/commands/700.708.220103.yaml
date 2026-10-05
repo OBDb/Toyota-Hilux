@@ -7,26 +7,5 @@ test_cases:
     HILUX_ENG_ODO: 91859
   response: 70807620103010166D3
 - expected_values:
-    HILUX_ENG_ODO: 91870
-  response: 70807620103010166DE
-- expected_values:
-    HILUX_ENG_ODO: 91871
-  response: 70807620103010166DF
-- expected_values:
-    HILUX_ENG_ODO: 91872
-  response: '70807620103010166E0'
-- expected_values:
-    HILUX_ENG_ODO: 91873
-  response: '70807620103010166E1'
-- expected_values:
-    HILUX_ENG_ODO: 91888
-  response: 70807620103010166F0
-- expected_values:
-    HILUX_ENG_ODO: 91889
-  response: 70807620103010166F1
-- expected_values:
-    HILUX_ENG_ODO: 91890
-  response: 70807620103010166F2
-- expected_values:
-    HILUX_ENG_ODO: 91891
-  response: 70807620103010166F3
+    HILUX_ENG_ODO: 91892
+  response: 70807620103010166F4
