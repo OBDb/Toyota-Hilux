@@ -167,7 +167,7 @@
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1105"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "HILUX_PM_ACCUMULATION_RAT_1", "path": "Engine", "fmt": { "len": 8, "max": 15, "mul": 2, "unit": "percent" }, "name": "PM accumulation ratio - bank 1"}
+    {"id": "HILUX_PM_ACCUMULATION_RAT_1", "path": "Engine", "fmt": { "len": 8, "max": 510, "mul": 2, "unit": "percent" }, "name": "PM accumulation ratio - bank 1"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "112B"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
@@ -361,8 +361,8 @@
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1F77"}, "freq": 5, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
-    {"id": "HILUX_IAT_B1S1", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 1"},
-    {"id": "HILUX_IAT_B1S2", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 2"}
+    {"id": "HILUX_IAT_B1S1", "path": "Engine", "fmt": {"bix": 8,  "len": 8, "max": 215, "min": -40, "add": -40,                 "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 1"},
+    {"id": "HILUX_IAT_B1S2", "path": "Engine", "fmt": {"bix": 16, "len": 8, "max": 215, "min": -40, "add": -40, "nullmin": -40, "unit": "celsius" }, "name": "Intake air temperature, bank 1 sensor 2"}
   ]},
 { "hdr": "700", "rax": "708", "cmd": {"22": "1F7A"}, "freq": 1, "dbgfilter": { "to": 2021, "from": 2023 },
   "signals": [
@@ -945,30 +945,30 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1, "dbgfilter": { "to": 2017, "from": 2019 },
   "signals": [
-    {"id": "HILUX_ENG_START_T",       "path": "Engine",       "fmt": {            "len": 16, "max": 655350,             "mul": 10,                            "unit": "milliseconds" }, "name": "Engine starting time"},
-    {"id": "HILUX_ENG_SPD_START_OFF", "path": "Movement",     "fmt": {"bix": 16,  "len": 16, "max": 51199,              "mul": 100, "div": 128,               "unit": "rpm"          }, "name": "Engine speed, starter off"},
-    {"id": "HILUX_IMMOB_FUEL_CUT",    "path": "Fuel",         "fmt": {"bix": 32,  "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Immobilizer fuel cut"},
-    {"id": "HILUX_STARTER_CNT",       "path": "Engine",       "fmt": {"bix": 33,  "len": 7,  "max": 127,                                                      "unit": "scalar"       }, "name": "Starter count"},
-    {"id": "HILUX_PREV_TRIP_DST",     "path": "Trips",        "fmt": {"bix": 40,  "len": 16, "max": 655.35,                         "div": 100,               "unit": "kilometers"   }, "name": "Previous trip distance"},
-    {"id": "HILUX_VVTOT",             "path": "Engine",       "fmt": {"bix": 56,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"      }, "name": "Variable valve timing oil temperature"},
-    {"id": "HILUX_PREV_TRIP_IAT",     "path": "Engine",       "fmt": {"bix": 64,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"      }, "name": "Intake air temperature, previous trip"},
-    {"id": "HILUX_EOT",               "path": "Engine",       "fmt": {"bix": 72,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"      }, "name": "Engine oil temperature"},
-    {"id": "HILUX_PREV_TRIP_EOT",     "path": "Engine",       "fmt": {"bix": 80,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"      }, "name": "Engine oil temperature, previous trip"},
-    {"id": "HILUX_AC_AMB_T",          "path": "Climate",      "fmt": {"bix": 88,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"      }, "name": "Ambient temperature for A/C"},
-    {"id": "HILUX_PREV_TRIP_AMB_T",   "path": "Trips",        "fmt": {"bix": 96,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "unit": "celsius"      }, "name": "Ambient temperature, previous trip"},
-    {"id": "HILUX_TPS",               "path": "Engine",       "fmt": {"bix": 104, "len": 16, "max": 499.99,             "mul": 125, "div": 16384,             "unit": "degrees"      }, "name": "Throttle position"},
-    {"id": "HILUX_ISC_FLOW",          "path": "Engine",       "fmt": {"bix": 120, "len": 16, "max": 79.99,              "mul": 10,  "div": 8192,              "unit": "scalar"       }, "name": "Idle speed control flow"},
-    {"id": "HILUX_ISC_POS",           "path": "Engine",       "fmt": {"bix": 136, "len": 16, "max": 499.99,             "mul": 125, "div": 16384,             "unit": "degrees"      }, "name": "Idle speed control position"},
-    {"id": "HILUX_ISC_FB",            "path": "Engine",       "fmt": {"bix": 168, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40, "unit": "scalar"       }, "name": "Idle speed control feedback"},
-    {"id": "HILUX_ISC_LEARN",         "path": "Engine",       "fmt": {"bix": 184, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40, "unit": "scalar"       }, "name": "Idle speed control learning value"},
-    {"id": "HILUX_ELEC_LOAD_FB",      "path": "Electrical",   "fmt": {"bix": 200, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40, "unit": "scalar"       }, "name": "Electric load feedback"},
-    {"id": "HILUX_AC_FB",             "path": "Climate",      "fmt": {"bix": 216, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40, "unit": "scalar"       }, "name": "Air conditioner feedback"},
-    {"id": "HILUX_N_RANGE_STS",       "path": "Transmission", "fmt": {"bix": 232, "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Neutral range status"},
-    {"id": "HILUX_NEUTRAL_CTRL",      "path": "Transmission", "fmt": {"bix": 233, "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Neutral control"},
-    {"id": "HILUX_LOW_RPM_CTRL",      "path": "Engine",       "fmt": {"bix": 234, "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Low revolution control"},
-    {"id": "HILUX_VVT_ADV_FAIL",      "path": "Engine",       "fmt": {"bix": 235, "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Variable valve timing advance fail"},
-    {"id": "HILUX_LOW_RPM_START",     "path": "Engine",       "fmt": {"bix": 236, "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Low revolution for engine start"},
-    {"id": "HILUX_ENG_START_HESIT",   "path": "Engine",       "fmt": {"bix": 237, "len": 1,  "max": 1,                                                        "unit": "offon"        }, "name": "Engine start hesitation"}
+    {"id": "HILUX_ENG_START_T",       "path": "Engine",       "fmt": {            "len": 16, "max": 655350,             "mul": 10,                                            "unit": "milliseconds" }, "name": "Engine starting time"},
+    {"id": "HILUX_ENG_SPD_START_OFF", "path": "Movement",     "fmt": {"bix": 16,  "len": 16, "max": 51199,              "mul": 100, "div": 128,                               "unit": "rpm"          }, "name": "Engine speed, starter off"},
+    {"id": "HILUX_IMMOB_FUEL_CUT",    "path": "Fuel",         "fmt": {"bix": 32,  "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Immobilizer fuel cut"},
+    {"id": "HILUX_STARTER_CNT",       "path": "Engine",       "fmt": {"bix": 33,  "len": 7,  "max": 127,                                                                      "unit": "scalar"       }, "name": "Starter count"},
+    {"id": "HILUX_PREV_TRIP_DST",     "path": "Trips",        "fmt": {"bix": 40,  "len": 16, "max": 655.35,                         "div": 100,                               "unit": "kilometers"   }, "name": "Previous trip distance"},
+    {"id": "HILUX_VVTOT",             "path": "Engine",       "fmt": {"bix": 56,  "len": 8,  "max": 215,    "min": -40,                           "add": -40,                 "unit": "celsius"      }, "name": "Variable valve timing oil temperature"},
+    {"id": "HILUX_PREV_TRIP_IAT",     "path": "Engine",       "fmt": {"bix": 64,  "len": 8,  "max": 215,    "min": -40,                           "add": -40,                 "unit": "celsius"      }, "name": "Intake air temperature, previous trip"},
+    {"id": "HILUX_EOT",               "path": "Engine",       "fmt": {"bix": 72,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "nullmin": -40, "unit": "celsius"      }, "name": "Engine oil temperature"},
+    {"id": "HILUX_PREV_TRIP_EOT",     "path": "Engine",       "fmt": {"bix": 80,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "nullmin": -40, "unit": "celsius"      }, "name": "Engine oil temperature, previous trip"},
+    {"id": "HILUX_AC_AMB_T",          "path": "Climate",      "fmt": {"bix": 88,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "nullmin": -40, "unit": "celsius"      }, "name": "Ambient temperature for A/C"},
+    {"id": "HILUX_PREV_TRIP_AMB_T",   "path": "Trips",        "fmt": {"bix": 96,  "len": 8,  "max": 215,    "min": -40,                           "add": -40, "nullmin": -40, "unit": "celsius"      }, "name": "Ambient temperature, previous trip"},
+    {"id": "HILUX_TPS",               "path": "Engine",       "fmt": {"bix": 104, "len": 16, "max": 499.99,             "mul": 125, "div": 16384,                             "unit": "degrees"      }, "name": "Throttle position"},
+    {"id": "HILUX_ISC_FLOW",          "path": "Engine",       "fmt": {"bix": 120, "len": 16, "max": 79.99,              "mul": 10,  "div": 8192,                              "unit": "scalar"       }, "name": "Idle speed control flow"},
+    {"id": "HILUX_ISC_POS",           "path": "Engine",       "fmt": {"bix": 136, "len": 16, "max": 499.99,             "mul": 125, "div": 16384,                             "unit": "degrees"      }, "name": "Idle speed control position"},
+    {"id": "HILUX_ISC_FB",            "path": "Engine",       "fmt": {"bix": 168, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40,                 "unit": "scalar"       }, "name": "Idle speed control feedback"},
+    {"id": "HILUX_ISC_LEARN",         "path": "Engine",       "fmt": {"bix": 184, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40,                 "unit": "scalar"       }, "name": "Idle speed control learning value"},
+    {"id": "HILUX_ELEC_LOAD_FB",      "path": "Electrical",   "fmt": {"bix": 200, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40,                 "unit": "scalar"       }, "name": "Electric load feedback"},
+    {"id": "HILUX_AC_FB",             "path": "Climate",      "fmt": {"bix": 216, "len": 16, "max": 39.99,  "min": -40, "mul": 10,  "div": 8192,  "add": -40,                 "unit": "scalar"       }, "name": "Air conditioner feedback"},
+    {"id": "HILUX_N_RANGE_STS",       "path": "Transmission", "fmt": {"bix": 232, "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Neutral range status"},
+    {"id": "HILUX_NEUTRAL_CTRL",      "path": "Transmission", "fmt": {"bix": 233, "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Neutral control"},
+    {"id": "HILUX_LOW_RPM_CTRL",      "path": "Engine",       "fmt": {"bix": 234, "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Low revolution control"},
+    {"id": "HILUX_VVT_ADV_FAIL",      "path": "Engine",       "fmt": {"bix": 235, "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Variable valve timing advance fail"},
+    {"id": "HILUX_LOW_RPM_START",     "path": "Engine",       "fmt": {"bix": 236, "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Low revolution for engine start"},
+    {"id": "HILUX_ENG_START_HESIT",   "path": "Engine",       "fmt": {"bix": 237, "len": 1,  "max": 1,                                                                        "unit": "offon"        }, "name": "Engine start hesitation"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "52"}, "freq": 0.25,
   "signals": [
