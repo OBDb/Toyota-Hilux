@@ -1,14 +1,14 @@
 command_id: 700.708.221F7A
 test_cases:
 - expected_values:
-    HILUX_DPF_DIFF_P: 0.05
+    HILUX_DPF_DIFF_P: 0.01
   response: |-
-    708100A621F7A010005
+    708100A621F7A010001
     7082100000000000000
 - expected_values:
-    HILUX_DPF_DIFF_P: -0.24
+    HILUX_DPF_DIFF_P: -0.36
   response: |-
-    708100A621F7A01FFE8
+    708100A621F7A01FFDC
     7082100000000000000
 - expected_values:
     HILUX_DPF_DIFF_P: -0.05

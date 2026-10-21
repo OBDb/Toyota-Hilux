@@ -3,3 +3,12 @@ test_cases:
 - expected_values:
     HILUX_IWP_SPEED: 32973
   response: 7080562107580CD
+- expected_values:
+    HILUX_IWP_SPEED: 33124
+  response: '708056210758164'
+- expected_values:
+    HILUX_IWP_SPEED: 36427
+  response: 708056210758E4B
+- expected_values:
+    HILUX_IWP_SPEED: 36443
+  response: 708056210758E5B

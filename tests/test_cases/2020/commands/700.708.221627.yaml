@@ -10,5 +10,5 @@ test_cases:
     HILUX_ATF_T_PAN_V3: 45
   response: '708056216275500'
 - expected_values:
-    HILUX_ATF_T_PAN_V3: 51.25
-  response: 708056216275B40
+    HILUX_ATF_T_PAN_V3: 64.375
+  response: '708056216276860'

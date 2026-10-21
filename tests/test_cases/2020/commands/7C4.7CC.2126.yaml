@@ -4,5 +4,5 @@ test_cases:
     HILUX_ECT: 50.65
   response: 7CC0361268D
 - expected_values:
-    HILUX_ECT: 84.95
-  response: 7CC036126EF
+    HILUX_ECT: 86
+  response: 7CC036126F2

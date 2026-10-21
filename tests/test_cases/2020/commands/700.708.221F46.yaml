@@ -9,3 +9,21 @@ test_cases:
 - expected_values:
     HILUX_AMBIENT_T_700: 26
   response: 70804621F4642
+- expected_values:
+    HILUX_AMBIENT_T_700: 27
+  response: 70804621F4643
+- expected_values:
+    HILUX_AMBIENT_T_700: 28
+  response: 70804621F4644
+- expected_values:
+    HILUX_AMBIENT_T_700: 29
+  response: 70804621F4645
+- expected_values:
+    HILUX_AMBIENT_T_700: 30
+  response: 70804621F4646
+- expected_values:
+    HILUX_AMBIENT_T_700: 31
+  response: 70804621F4647
+- expected_values:
+    HILUX_AMBIENT_T_700: 32
+  response: 70804621F4648

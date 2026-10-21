@@ -1,14 +1,11 @@
 command_id: 700.708.22112C
 test_cases:
 - expected_values:
-    HILUX_INJ_VOLUME_TGT: 0.48828
-  response: 7080562112C0019
+    HILUX_INJ_VOLUME_TGT: 0
+  response: 7080562112C0000
+- expected_values:
+    HILUX_INJ_VOLUME_TGT: 14.90215
+  response: 7080562112C02FB
 - expected_values:
     HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C03D8
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C0405
-- expected_values:
-    HILUX_INJ_VOLUME_TGT: 15
-  response: 7080562112C0757
+  response: 7080562112C0A4C

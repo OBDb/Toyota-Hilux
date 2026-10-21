@@ -4,20 +4,5 @@ test_cases:
     HILUX_FLI_VOL: 14.66314
   response: 7C80361296F
 - expected_values:
-    HILUX_FLI_VOL: 14.79524
-  response: 7C803612970
-- expected_values:
-    HILUX_FLI_VOL: 14.92734
-  response: 7C803612971
-- expected_values:
-    HILUX_FLI_VOL: 15.05945
-  response: 7C803612972
-- expected_values:
-    HILUX_FLI_VOL: 15.19155
-  response: 7C803612973
-- expected_values:
-    HILUX_FLI_VOL: 15.32365
-  response: 7C803612974
-- expected_values:
-    HILUX_FLI_VOL: 15.85205
-  response: 7C803612978
+    HILUX_FLI_VOL: 19.55086
+  response: 7C803612994

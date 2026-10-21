@@ -4,5 +4,5 @@ test_cases:
     HILUX_FUEL_RETURN_T: 31
   response: '7080462114147'
 - expected_values:
-    HILUX_FUEL_RETURN_T: 47
-  response: '7080462114157'
+    HILUX_FUEL_RETURN_T: 71
+  response: 708046211416F

@@ -1,14 +1,14 @@
 command_id: 700.708.221074
 test_cases:
 - expected_values:
-    HILUX_EOP: 123.67188
-  response: 70805621074062F
+    HILUX_EOP: 113.90625
+  response: 7080562107405B2
 - expected_values:
-    HILUX_EOP: 139.53125
-  response: 7080562107406FA
+    HILUX_EOP: 119.6875
+  response: 7080562107405FC
 - expected_values:
     HILUX_EOP: 141.09375
   response: 70805621074070E
 - expected_values:
-    HILUX_EOP: 181.64062
-  response: '708056210740915'
+    HILUX_EOP: 415.39062
+  response: 7080562107414C5

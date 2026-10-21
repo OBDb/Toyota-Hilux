@@ -5,7 +5,7 @@ test_cases:
   response: 7D8056162010000
 - expected_values:
     HILUX_PARKING_BRAKE_2: 0
-  response: 7D8056162012A00
+  response: 7D8056162093D00
 - expected_values:
     HILUX_PARKING_BRAKE_2: 0
-  response: 7D8056162090000
+  response: 7D80561621D0000

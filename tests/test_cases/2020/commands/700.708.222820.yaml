@@ -3,3 +3,12 @@ test_cases:
 - expected_values:
     HILUX_INTERCOOLER_WATER: 0
   response: '708056228200000'
+- expected_values:
+    HILUX_INTERCOOLER_WATER: 40.7538
+  response: 708056228201A15
+- expected_values:
+    HILUX_INTERCOOLER_WATER: 40.91859
+  response: 708056228201A30
+- expected_values:
+    HILUX_INTERCOOLER_WATER: 40.9369
+  response: 708056228201A33
