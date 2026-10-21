@@ -1,0 +1,14 @@
+command_id: 700.708.220103
+test_cases:
+- expected_values:
+    HILUX_ENG_ODO: 38997
+  response: '7080762010301009855'
+- expected_values:
+    HILUX_ENG_ODO: 38998
+  response: '7080762010301009856'
+- expected_values:
+    HILUX_ENG_ODO: 38999
+  response: '7080762010301009857'
+- expected_values:
+    HILUX_ENG_ODO: 39000
+  response: '7080762010301009858'

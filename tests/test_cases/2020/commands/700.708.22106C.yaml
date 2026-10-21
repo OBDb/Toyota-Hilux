@@ -1,0 +1,14 @@
+command_id: 700.708.22106C
+test_cases:
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 5355
+  response: 7080562106C14EB
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 5356
+  response: 7080562106C14EC
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 5357
+  response: 7080562106C14ED
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 5358
+  response: 7080562106C14EE

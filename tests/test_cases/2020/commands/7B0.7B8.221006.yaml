@@ -1,0 +1,8 @@
+command_id: 7B0.7B8.221006
+test_cases:
+- expected_values:
+    HILUX_MASTER_CYL_TEMP: 30
+  response: 7B8056210066E00
+- expected_values:
+    HILUX_MASTER_CYL_TEMP: 31
+  response: 7B8056210066F00
