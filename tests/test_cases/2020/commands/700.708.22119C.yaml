@@ -1,0 +1,26 @@
+command_id: 700.708.22119C
+test_cases:
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 34
+  response: 7080462119C4A
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 35
+  response: 7080462119C4B
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 36
+  response: 7080462119C4C
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 40
+  response: 7080462119C50
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 41
+  response: 7080462119C51
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 42
+  response: 7080462119C52
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 43
+  response: 7080462119C53
+- expected_values:
+    HILUX_INTERCOOLER_ECT: 44
+  response: 7080462119C54

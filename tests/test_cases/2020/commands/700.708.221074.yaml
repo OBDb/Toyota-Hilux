@@ -1,0 +1,14 @@
+command_id: 700.708.221074
+test_cases:
+- expected_values:
+    HILUX_EOP: 123.67188
+  response: 70805621074062F
+- expected_values:
+    HILUX_EOP: 139.53125
+  response: 7080562107406FA
+- expected_values:
+    HILUX_EOP: 141.09375
+  response: 70805621074070E
+- expected_values:
+    HILUX_EOP: 181.64062
+  response: '708056210740915'

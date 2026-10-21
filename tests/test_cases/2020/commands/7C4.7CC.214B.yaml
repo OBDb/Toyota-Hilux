@@ -1,0 +1,8 @@
+command_id: 7C4.7CC.214B
+test_cases:
+- expected_values:
+    HILUX_EVAP_FIN_THERMISTOR: 34.35
+  response: 7CC03614BB7
+- expected_values:
+    HILUX_EVAP_FIN_THERMISTOR: 34.7
+  response: 7CC03614BB8

@@ -1,0 +1,11 @@
+command_id: 700.708.22112F
+test_cases:
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 3.58551
+  response: 7080562112F80B8
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F85FA
+- expected_values:
+    HILUX_INJ_VOLUME_TOT: 15
+  response: 7080562112F8609

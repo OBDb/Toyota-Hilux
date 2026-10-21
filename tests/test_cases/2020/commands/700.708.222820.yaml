@@ -1,0 +1,5 @@
+command_id: 700.708.222820
+test_cases:
+- expected_values:
+    HILUX_INTERCOOLER_WATER: 0
+  response: '708056228200000'
