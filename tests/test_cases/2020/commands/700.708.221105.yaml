@@ -3,3 +3,9 @@ test_cases:
 - expected_values:
     HILUX_PM_ACCUMULATION_RAT_1: 38
   response: '7080462110513'
+- expected_values:
+    HILUX_PM_ACCUMULATION_RAT_1: 40
+  response: '7080462110514'
+- expected_values:
+    HILUX_PM_ACCUMULATION_RAT_1: 42
+  response: '7080462110515'

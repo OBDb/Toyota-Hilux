@@ -6,3 +6,9 @@ test_cases:
 - expected_values:
     HILUX_EVAP_FIN_THERMISTOR: 34.7
   response: 7CC03614BB8
+- expected_values:
+    HILUX_EVAP_FIN_THERMISTOR: 35.05
+  response: 7CC03614BB9
+- expected_values:
+    HILUX_EVAP_FIN_THERMISTOR: 36.1
+  response: 7CC03614BBC

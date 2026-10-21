@@ -7,8 +7,20 @@ test_cases:
     HILUX_FUEL_T_4: 31
   response: '7080762113E47474547'
 - expected_values:
-    HILUX_FUEL_T_1: 47
-    HILUX_FUEL_T_2: 49
-    HILUX_FUEL_T_3: 45
-    HILUX_FUEL_T_4: 47
-  response: '7080762113E57595557'
+    HILUX_FUEL_T_1: 65
+    HILUX_FUEL_T_2: 73
+    HILUX_FUEL_T_3: 70
+    HILUX_FUEL_T_4: 70
+  response: 7080762113E69716E6E
+- expected_values:
+    HILUX_FUEL_T_1: 66
+    HILUX_FUEL_T_2: 75
+    HILUX_FUEL_T_3: 70
+    HILUX_FUEL_T_4: 70
+  response: 7080762113E6A736E6E
+- expected_values:
+    HILUX_FUEL_T_1: 70
+    HILUX_FUEL_T_2: 75
+    HILUX_FUEL_T_3: 70
+    HILUX_FUEL_T_4: 70
+  response: 7080762113E6E736E6E

@@ -10,5 +10,5 @@ test_cases:
     HILUX_TRANS_FLUID_POST_T_3: 56.875
   response: '7080562162860E0'
 - expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 57.5
-  response: '708056216286180'
+    HILUX_TRANS_FLUID_POST_T_3: 71.25
+  response: 708056216286F40

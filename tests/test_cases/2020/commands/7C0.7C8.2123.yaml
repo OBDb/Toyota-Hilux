@@ -4,5 +4,5 @@ test_cases:
     HILUX_COOLANT_T: 0
   response: 7C803612300
 - expected_values:
-    HILUX_COOLANT_T: 84.5
-  response: 7C8036123A9
+    HILUX_COOLANT_T: 86
+  response: 7C8036123AC
