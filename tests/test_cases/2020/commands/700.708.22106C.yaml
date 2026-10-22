@@ -4,5 +4,11 @@ test_cases:
     HILUX_12V_DISCONNECT_ODO: 5355
   response: 7080562106C14EB
 - expected_values:
-    HILUX_12V_DISCONNECT_ODO: 5368
-  response: 7080562106C14F8
+    HILUX_12V_DISCONNECT_ODO: 9725
+  response: 7080562106C25FD
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 9728
+  response: 7080562106C2600
+- expected_values:
+    HILUX_12V_DISCONNECT_ODO: 9999
+  response: 7080562106C270F

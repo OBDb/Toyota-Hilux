@@ -1,14 +1,14 @@
 command_id: 700.708.221627
 test_cases:
 - expected_values:
-    HILUX_ATF_T_PAN_V3: 32.5
-  response: '708056216274880'
+    HILUX_ATF_T_PAN_V3: 10.625
+  response: 7080562162732A0
 - expected_values:
-    HILUX_ATF_T_PAN_V3: 41.875
-  response: '7080562162751E0'
+    HILUX_ATF_T_PAN_V3: 11.875
+  response: '7080562162733E0'
 - expected_values:
-    HILUX_ATF_T_PAN_V3: 45
-  response: '708056216275500'
+    HILUX_ATF_T_PAN_V3: 15
+  response: '708056216273700'
 - expected_values:
     HILUX_ATF_T_PAN_V3: 64.375
   response: '708056216276860'

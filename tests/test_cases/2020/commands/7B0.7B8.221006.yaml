@@ -1,32 +1,8 @@
 command_id: 7B0.7B8.221006
 test_cases:
 - expected_values:
-    HILUX_MASTER_CYL_TEMP: 30
-  response: 7B8056210066E00
+    HILUX_MASTER_CYL_TEMP: 11
+  response: 7B8056210065B00
 - expected_values:
-    HILUX_MASTER_CYL_TEMP: 31
-  response: 7B8056210066F00
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 32
-  response: 7B8056210067000
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 33
-  response: 7B8056210067100
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 34
-  response: 7B8056210067200
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 35
-  response: 7B8056210067300
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 36
-  response: 7B8056210067400
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 37
-  response: 7B8056210067500
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 38
-  response: 7B8056210067600
-- expected_values:
-    HILUX_MASTER_CYL_TEMP: 39
-  response: 7B8056210067700
+    HILUX_MASTER_CYL_TEMP: 47
+  response: 7B8056210067F00
