@@ -1,9 +1,9 @@
 command_id: 700.708.221F77
 test_cases:
 - expected_values:
-    HILUX_IAT_B1S1: 33
+    HILUX_IAT_B1S1: 31
   response: |-
-    7081008621F77014900
+    7081008621F77014700
     7082100000000000000
 - expected_values:
     HILUX_IAT_B1S1: 47

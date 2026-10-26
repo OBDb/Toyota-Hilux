@@ -1,6 +1,12 @@
 command_id: 700.708.221105
 test_cases:
 - expected_values:
+    HILUX_PM_ACCUMULATION_RAT_1: 14
+  response: '7080462110507'
+- expected_values:
+    HILUX_PM_ACCUMULATION_RAT_1: 18
+  response: '7080462110509'
+- expected_values:
     HILUX_PM_ACCUMULATION_RAT_1: 38
   response: '7080462110513'
 - expected_values:
