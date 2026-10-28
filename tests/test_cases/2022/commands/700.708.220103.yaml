@@ -10,5 +10,5 @@ test_cases:
     HILUX_ENG_ODO: 92416
   response: '7080762010301016900'
 - expected_values:
-    HILUX_ENG_ODO: 93184
-  response: 7080762010301016C00
+    HILUX_ENG_ODO: 93440
+  response: 7080762010301016D00
