@@ -1,11 +1,11 @@
 command_id: 700.708.221628
 test_cases:
 - expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 40.625
-  response: 7080562162850A0
+    HILUX_TRANS_FLUID_POST_T_3: 39.375
+  response: 708056216284F60
 - expected_values:
-    HILUX_TRANS_FLUID_POST_T_3: 45
-  response: '708056216285500'
+    HILUX_TRANS_FLUID_POST_T_3: 40
+  response: '708056216285000'
 - expected_values:
     HILUX_TRANS_FLUID_POST_T_3: 56.875
   response: '7080562162860E0'
