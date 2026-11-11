@@ -1,11 +1,11 @@
 command_id: 700.708.22113E
 test_cases:
 - expected_values:
-    HILUX_FUEL_T_1: 31
-    HILUX_FUEL_T_2: 31
-    HILUX_FUEL_T_3: 29
-    HILUX_FUEL_T_4: 31
-  response: '7080762113E47474547'
+    HILUX_FUEL_T_1: 23
+    HILUX_FUEL_T_2: 23
+    HILUX_FUEL_T_3: 21
+    HILUX_FUEL_T_4: 23
+  response: 7080762113E3F3F3D3F
 - expected_values:
     HILUX_FUEL_T_1: 65
     HILUX_FUEL_T_2: 73

@@ -1,8 +1,8 @@
 command_id: 700.708.221141
 test_cases:
 - expected_values:
-    HILUX_FUEL_RETURN_T: 31
-  response: '7080462114147'
+    HILUX_FUEL_RETURN_T: 22
+  response: 708046211413E
 - expected_values:
     HILUX_FUEL_RETURN_T: 71
   response: 708046211416F
