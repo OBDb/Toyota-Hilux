@@ -6,9 +6,9 @@ test_cases:
     708100A621F7A010001
     7082100000000000000
 - expected_values:
-    HILUX_DPF_DIFF_P: -0.36
+    HILUX_DPF_DIFF_P: -0.43
   response: |-
-    708100A621F7A01FFDC
+    708100A621F7A01FFD5
     7082100000000000000
 - expected_values:
     HILUX_DPF_DIFF_P: -0.05

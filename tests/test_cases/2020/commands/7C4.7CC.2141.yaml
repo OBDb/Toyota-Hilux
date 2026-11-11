@@ -5,6 +5,10 @@ test_cases:
     HILUX_AIR_MIX_SERVO_TARG_D: 37
   response: 7CC066141252501B8
 - expected_values:
+    HILUX_AIR_MIX_SERVO_ACT_D: 89
+    HILUX_AIR_MIX_SERVO_TARG_D: 89
+  response: 7CC066141595901BA
+- expected_values:
     HILUX_AIR_MIX_SERVO_ACT_D: 107
     HILUX_AIR_MIX_SERVO_TARG_D: 107
   response: 7CC0661416B6B0198
