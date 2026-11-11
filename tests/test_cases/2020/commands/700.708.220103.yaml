@@ -4,5 +4,8 @@ test_cases:
     HILUX_ENG_ODO: 38997
   response: '7080762010301009855'
 - expected_values:
-    HILUX_ENG_ODO: 39011
-  response: '7080762010301009863'
+    HILUX_ENG_ODO: 39268
+  response: '7080762010301009964'
+- expected_values:
+    HILUX_ENG_ODO: 39285
+  response: '7080762010301009975'

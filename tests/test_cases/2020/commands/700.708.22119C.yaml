@@ -1,8 +1,8 @@
 command_id: 700.708.22119C
 test_cases:
 - expected_values:
-    HILUX_INTERCOOLER_ECT: 29
-  response: 7080462119C45
+    HILUX_INTERCOOLER_ECT: 24
+  response: 7080462119C40
 - expected_values:
     HILUX_INTERCOOLER_ECT: 67
   response: 7080462119C6B
