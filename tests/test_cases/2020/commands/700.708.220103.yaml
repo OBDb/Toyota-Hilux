@@ -1,11 +1,14 @@
 command_id: 700.708.220103
 test_cases:
 - expected_values:
-    HILUX_ENG_ODO: 38997
+    HILUX_ENG_ODO_RAW: 38997
+    HILUX_ENG_ODO_UNIT: KM
   response: '7080762010301009855'
 - expected_values:
-    HILUX_ENG_ODO: 39268
+    HILUX_ENG_ODO_RAW: 39268
+    HILUX_ENG_ODO_UNIT: KM
   response: '7080762010301009964'
 - expected_values:
-    HILUX_ENG_ODO: 39334
+    HILUX_ENG_ODO_RAW: 39334
+    HILUX_ENG_ODO_UNIT: KM
   response: 70807620103010099A6
