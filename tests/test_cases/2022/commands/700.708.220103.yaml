@@ -13,6 +13,6 @@ test_cases:
     HILUX_ENG_ODO_UNIT: KM
   response: '7080762010301016900'
 - expected_values:
-    HILUX_ENG_ODO_RAW: 94464
+    HILUX_ENG_ODO_RAW: 94720
     HILUX_ENG_ODO_UNIT: KM
-  response: '7080762010301017100'
+  response: '7080762010301017200'
